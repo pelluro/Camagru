@@ -1,0 +1,170 @@
+body{
+    background-color: #424558;
+    font-family: 'Source Code Pro',"Comic Sans MS",serif;
+    margin:0;
+    padding:0;
+
+}
+.menu{
+    text-align: center;
+}
+nav {
+    width: 31%;
+    background-color: #424558;
+    position: relative;
+    border: 8px solid darkcyan;
+    border-radius: 15px;
+    left: 30vw;
+}
+
+nav > ul {
+    border: 15px solid #424558;
+    margin:0px;
+    padding: 0px;
+}
+
+nav > ul::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+ul ul ul {
+    left:100%;
+    top:0;
+}
+
+li:hover > ul {
+    display:block;
+    position:absolute;
+}
+
+nav > ul > li {
+    float : left;
+    position: relative;
+    margin: 1vw;
+}
+nav > ul > li > a {
+    padding: 20px 35px;
+    color: tomato;
+    transition: padding 1s;
+    border: 2px solid navajowhite;
+    border-radius: 15px;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 20px 30px 20px;
+}
+nav li {
+    list-style-type:none;
+}
+
+.details{
+    display: none;
+}
+
+.details_plat{
+    display: none;
+
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .details{
+    display: inline-block;
+    position: absolute;
+    top : 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+
+.details li{
+    border-bottom: 1px solid #F3E63C;
+}
+
+.details li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: black;
+    width: 270px;
+}
+
+.details_plat li a{
+    font-size: 13px;
+    width: 70px;
+    display: inline-block;
+}
+
+nav li:hover .hey{
+    display: inline-block;
+    position:relative;
+    top : 100%;
+    left: 0px;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.details_plat li{
+    display: none;
+}
+
+.hey:hover li  {
+    display: block;
+
+}
+
+.entree:hover{
+    /*margin: 3vw;*/
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.plat:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+.dessert:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+.contact:hover{
+    border-top: 5px solid green;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.entree .details{
+    background-color: RGB(230,100,40);
+}
+.plat .details{
+    background-color: RGB(000,160,240);
+}
+.dessert .details{
+    background-color: mediumspringgreen;
+}
+.contact .details{
+    background-color: gold;
+}
+
+.details li:hover a{
+    color: blue;
+    font-weight: bold;
+}
+.details_plat li:hover a{
+    color: greenyellow;
+    font-weight: bold;
+    background-color: #777777;
+}
+
+.entree .details li:hover{
+    background-color: RGB(210,77,60);
+}
+.plat .details li:hover{
+    background-color: RGB(000,115,200);
+}
+.dessert .details li:hover{
+    background-color: RGB(200,165,75);
+}
