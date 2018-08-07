@@ -1,0 +1,23 @@
+.categories {
+    width: 20%;
+	position: fixed;
+	left: 40%;
+	top: 15%;
+	overflow: auto;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+.categories a {
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#prodbycat {
+	overflow: scroll;
+	height: 900px;
+}
