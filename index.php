@@ -11,8 +11,8 @@
 	include('./header.php');
 ?>
 <div>
-	<h1 id="frontpage">Bienvenue sur myshop !</h1>
-	<p id="attrait"> Découvrez notre séléction de vêtements pour vous habiller...</p>
+	<h1 id="main">Main !</h1>
+	<p id="side"> Découvrez notre séléction de vêtements pour vous habiller...</p>
 </div>
 </body>
 <?php

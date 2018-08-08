@@ -39,7 +39,7 @@ footer {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #111;
+	background-color: #55c57a;
 }
 
 .topmenu a {
@@ -47,7 +47,7 @@ footer {
 	margin-left: 5%;
 	text-decoration: none;
 	font-size: 36px;
-	color: #818181;
+	color: #55c57a;
 	display: inline-block;
 	top: 50;
 }
@@ -63,7 +63,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background-color: #111;
+	background-color: #55c57a;
 }
 
 .botmenu a {
