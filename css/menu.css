@@ -1,5 +1,5 @@
 body {
-	background-color: #424558;
+	background-color: lightpink;
 	font-family: 'Source Code Pro',"Comic Sans MS",serif;
 	font-weight: 16px;
 	line-height: 1.7;
@@ -17,7 +17,7 @@ body {
 
 #main {
 	position: relative;
-    top:30%;
+    top:20%;
     max-width:160vw;
     max-height: 160vw;
     margin:auto;
@@ -27,17 +27,14 @@ body {
     float: left;
     background-color: darkkhaki;
     text-align: center;
-    width:1240px;
+    width:10vw;
     /*position:absolute;*/
 }
-
+/
 #side {
 	/*position: fixed;*/
-	/*top: 40%;*/
-	/*left: 60%;*/
-
-    margin-left:245px;
-    min-height:150px;
+	/*top: 30%;*/
+	margin-left: 60%;
     background-color: aqua;
 	font-size: 40px;
 }
@@ -83,6 +80,7 @@ body {
 	bottom: 0;
 	left: 0;
     background-color: #55c57a;
+    background-imge: url(../img/bgheader.jpg);
 }
 
 .footer a {
