@@ -10,9 +10,13 @@
 <?php
 	include('./header.php');
 ?>
-<div>
-	<h1 id="main">Main !</h1>
-	<p id="side"> Découvrez notre séléction de vêtements pour vous habiller...</p>
+<div id = "main">
+    <div id="contenu">
+	    <h1>contenu !</h1>
+    </div>
+    <div id="side">
+	    <p> Découvrez side...</p>
+    </div>
 </div>
 </body>
 <?php

@@ -1,8 +1,7 @@
-<div class="topmenu">
+<div class="header">
 	<a href="index.php">Accueil</a>
-	<a href="produit.php">Produits</a>
-	<a href="cart.php">Panier</a>
-	<a href='categories.php'>Catégories</a>
+	<a href="produit.php">Galerie</a>
+	<a href="cart.php">Mon compte</a>
 	<?php
 	if (!isset($_SESSION['loggued_on_user']))
 	{

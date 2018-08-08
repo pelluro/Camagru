@@ -7,24 +7,35 @@ body {
 	padding:0;
 
 }
+.header, #main, #contenu, .footer {
+    padding:1px 0;
+}
 
-footer {
+.footer {
 	display: block;
 }
 
 #main {
 	position: relative;
-	top: 30%;
-	/*left: 30%;*/
-	font-size: 40px;
-	/*padding: 20px;*/
+    max-width:1600px;
+    margin:auto;
+
 	border: solid violet 2px;
+}
+#contenu{
+    background-color: darkkhaki;
+    text-align: center;
+    width:1240px;
+    /*position:absolute;*/
 }
 
 #side {
-	position: fixed;
-	top: 40%;
-	left: 30%;
+	/*position: fixed;*/
+	/*top: 40%;*/
+	/*left: 60%;*/
+    margin-left:245px;
+    min-height:150px;
+    background-color: aqua;
 	font-size: 40px;
 }
 
@@ -35,7 +46,7 @@ footer {
 	margin-left: 0;
 }
 
-.topmenu {
+.header {
 	padding-left: 8%;
     height: 10%;
     width: 100%;
@@ -45,7 +56,7 @@ footer {
     background-color: #55c57a;
 }
 
-.topmenu a {
+.header a {
 	padding-top: 2%;
 	margin-left: 5%;
     text-decoration: none;
@@ -55,11 +66,11 @@ footer {
 	top: 50;
 }
 
-.topmenu a:hover {
+.header a:hover {
     color: deeppink;
 }
 
-.botmenu {
+.footer {
 	padding-left: 26%;
     height: 10%;
     width: 100%;
@@ -69,7 +80,7 @@ footer {
     background-color: #55c57a;
 }
 
-.botmenu a {
+.footer a {
 	margin-left: 13%;
     text-decoration: none;
     font-size: 36px;
@@ -77,15 +88,14 @@ footer {
     display: inline-block;
 }
 
-.botmenu a:hover {
+.footer a:hover {
     color: deeppink;
 }
 
-.botmenu p {
+.footer p {
 	margin-left: 15%;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: inline-block;
 }
-

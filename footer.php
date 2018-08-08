@@ -1,5 +1,5 @@
 <footer>
-	<div class="botmenu">
+	<div class="footer">
 		<?php
 		if (isset($_SESSION['loggued_on_user']))
 		{
