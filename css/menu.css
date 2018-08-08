@@ -17,12 +17,14 @@ body {
 
 #main {
 	position: relative;
-    max-width:1600px;
+    top:30%;
+    max-width:160vw;
+    max-height: 160vw;
     margin:auto;
-
 	border: solid violet 2px;
 }
 #contenu{
+    float: left;
     background-color: darkkhaki;
     text-align: center;
     width:1240px;
@@ -33,6 +35,7 @@ body {
 	/*position: fixed;*/
 	/*top: 40%;*/
 	/*left: 60%;*/
+
     margin-left:245px;
     min-height:150px;
     background-color: aqua;
@@ -48,12 +51,14 @@ body {
 
 .header {
 	padding-left: 8%;
-    height: 10%;
+    height: 10vw;
     width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-    background-color: #55c57a;
+    /*background-color: #55c57a;*/
+    background-size: auto;
+    background-image: url(../img/bgheader.jpg);
 }
 
 .header a {

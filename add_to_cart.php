@@ -48,5 +48,5 @@ if (isset($productid))
 		}
 	}
 }
-header("Location: produit.php");
+header("Location: galery.php");
 ?>

@@ -1,6 +1,6 @@
 <div class="header">
 	<a href="index.php">Accueil</a>
-	<a href="produit.php">Galerie</a>
+	<a href="galery.php">Galerie</a>
 	<a href="cart.php">Mon compte</a>
 	<?php
 	if (!isset($_SESSION['loggued_on_user']))
