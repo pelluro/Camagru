@@ -1,7 +1,7 @@
 <?php
-//require_once "login_ecole.php";
-//require_once "login_nas.php";
-require_once "login_surface.php";
+//require_once "login_ecole_setup.php";
+//require_once "login_nas_setup.php";
+require_once "login_surface_setup.php";
 
 try {
     $dbConnection = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD);
