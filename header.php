@@ -17,11 +17,11 @@ require_once ("./config/database.php");
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="page.php">Galery</a></li>
-                    <li><a href="#">Sign in</a></li>
+                    <li><a href="galery.php">Galery</a></li>
+                    <li><a href="connexion.php">Sign in</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="first_connect.php">Sign up</a></li>
                 </ul>
             </div>
         </div>
