@@ -3,7 +3,6 @@
 	include('./header.php');
 ?>
 
-<html>
 <div class="alert-warning">
     <h1> Sign In</h1>
     <form id="form" action="login.php" method="post">
@@ -16,7 +15,6 @@
     <br/>
     <a href="forgot_pass.php"> Forgot Password ?</a>
 </div>
-</html>
 <?php
 	include('./footer.php');
 ?>
