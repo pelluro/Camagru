@@ -1,5 +1,5 @@
 <?php
-    $titlePage = "Mon titre 2";
+    $titlePage = "Index";
 	include('./header.php');
 ?>
 
