@@ -22,9 +22,6 @@ else
         <div class="alert alert-danger">
 
         <h1>Well Done For Forgetting your Password!</h1>
-
-        <img src="http://montreux.eerv.ch/wp-content/uploads/sites/139/2015/05/pouce.png">
-        </br>
         </br>
         <h2>An email has been sent to this address: <?=$email?></h2>
         <p>Please click on the link you received to reset your password</p>
@@ -47,11 +44,6 @@ else
     }
     $query->closeCursor();
 }
-?>
-<div class="alert-info">
 
-    <h1>Connexion reussi !</h1>
-</div>
-<?php
 include('./footer.php');
 ?>

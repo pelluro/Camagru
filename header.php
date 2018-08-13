@@ -18,7 +18,7 @@ require_once ("./functions/functions.php");
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="galery.php">Galery</a></li>
+                    <li><a href="photos.php">Galery</a></li>
                     <li><a href="connexion.php">Sign in</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

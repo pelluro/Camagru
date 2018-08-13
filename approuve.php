@@ -7,9 +7,8 @@ if (!$_GET['login'] || !$_GET['confirmation_code'] || !$_GET['email'])
 else
 {
     $code=$_GET['confirmation_code'];
-    connect();
     $req = "SELECT * FROM comments WHERE com_confirmation_code='?' ";
-    $query = $bdd->prepare($req);
+    $query = $dbConnection->prepare($req);
     $query->execute( array($code));
     if ($query->rowCount() == 1)
     {
@@ -21,7 +20,7 @@ else
             header('location: photos.php');
         }
         else
-            echo "<p>Sorry, there has been a problem approving this comment. Please contact admin.</p>";
+            echo "<p>Sorry, there has been a <prob></prob>lem approving this comment. Please contact admin.</p>";
     }
     else
         header('location: index.php');

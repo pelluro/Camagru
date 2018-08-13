@@ -5,7 +5,7 @@
 
 <div class="alert-warning">
     <h1> Sign In</h1>
-    <form id="form" action="login.php" method="post">
+    <form id="form" action="login.php" method="POST">
         Login : <input type="text" name="login" value=""/>
         <br/>
         Password : <input type="password" name="passwd" value=""/>

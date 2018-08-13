@@ -7,7 +7,7 @@ $req = 'CREATE DATABASE IF NOT EXISTS camagru;
                                             login VARCHAR(16) NOT NULL default "",
                                             passwd VARCHAR(128) NOT NULL default "",
                                             token VARCHAR(128) NOT NULL, 
-                                            verified BINARY(1) NOT NULL default "0" );
+                                            verified INT(1) NOT NULL default "0" );
     CREATE TABLE IF NOT EXISTS pictures (   id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
                                             filename VARCHAR(19) NOT NULL default "",
                                             filedate DATETIME,
