@@ -1,6 +1,6 @@
 <?php
 $titlePage = "Revoyer mail";
-include('./header.php');
+include('./views/header.php');
 
 if(!$_POST['email'] || $_POST['submit'] != "Send me reset instructions")
     header('location: forgot_pass.php');
@@ -45,5 +45,5 @@ else
     $query->closeCursor();
 }
 
-include('./footer.php');
+include('./views/footer.php');
 ?>

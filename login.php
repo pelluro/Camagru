@@ -1,6 +1,7 @@
 <?php
 $titlePage = "Login Page";
-include('./header.php');
+include('./views/header.php');
+print_array($_POST);
 
 if(!isset($_POST['login']) || !isset($_POST['passwd']))
 {
@@ -11,17 +12,19 @@ else
 {
     $login = htmlentities($_POST['login'], ENT_QUOTES, "UTF-8");
     $passwd = htmlentities($_POST['passwd'], ENT_QUOTES,"UTF-8");
-    $passwd = hash('whirpool', $passwd);
+    $passwd = hash('whirlpool', $passwd);
     $req = "SELECT email, login, passwd FROM users";
     $query = $dbConnection->prepare($req);
     $query->execute();
+
     if ($query->rowCount() > 0) {
         while ($data = $query->fetch()) {
             if ($login === $data['login'] AND $passwd === $data['passwd']) {
                 $_SESSION['login'] = $login;
                 $email = $data['email'];
                 $_SESSION['email'] = $email;
-                header('location: main.php');
+                $_SESSION['firstlogin'] = 1;
+                header('location: index.php');
                 exit;
             } else
                 header('location: error_connexion.php');
@@ -32,5 +35,5 @@ else
     $query->closeCursor();
 }
 
-include('./footer.php');
+include('./views/footer.php');
 ?>

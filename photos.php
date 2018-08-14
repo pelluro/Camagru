@@ -1,6 +1,6 @@
 <?php
 $titlePage = "Galery Page";
-include('./header.php');
+include('./views/header.php');
 ?>
 
 <p>Ttatata</p>

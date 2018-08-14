@@ -1,6 +1,6 @@
 <?php
 $titlePage = "approuve";
-include('./header.php');
+include('./views/header.php');
 
 if (!$_GET['login'] || !$_GET['confirmation_code'] || !$_GET['email'])
     header('location: index.php');

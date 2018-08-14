@@ -1,6 +1,6 @@
 <?php
 $titlePage = "Mon titre 2";
-include('./header.php');
+include('./views/header.php');
 
     if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd'])  || strlen($_POST['passwd']) < 8)
     {
@@ -48,5 +48,5 @@ include('./header.php');
         }
         $query->closeCursor();
     }
-    include('./footer.php');
+include('./views/footer.php');
 ?>

@@ -1,6 +1,6 @@
 <?php
 $titlePage = "Forgot Pass";
-include('./header.php');
+include('./views/header.php');
 ?>
 <div class="alert alert-info">
 
@@ -16,5 +16,5 @@ include('./header.php');
     </div>
 </div>
 <?php
-include('./footer.php');
+include('./views/footer.php');
 ?>

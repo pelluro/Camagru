@@ -1,6 +1,6 @@
 <?php
     $titlePage = "Register";
-    include('./header.php');
+include('./views/header.php');
 ?>
     <div class="alert-info">
         <h1> Create an account</h1>
@@ -16,5 +16,5 @@
         </div>
     </div>
 <?php
-    include('./footer.php');
+include('./views/footer.php');
 ?>

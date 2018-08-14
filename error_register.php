@@ -1,10 +1,10 @@
 <?php
 $titlePage = "Forgot Pass";
-include('./header.php');
+include('./views/header.php');
 ?>
     <div class="alert-info">
         <p>Erreur connexion ! </p>
     </div>
 <?php
-include('./footer.php');
+include('./views/footer.php');
 ?>

@@ -9,6 +9,21 @@ function is_in_array($value, $array)
 	return FALSE;
 }
 
+function print_array($array)
+{
+    foreach ($array as $key => $value)
+    {
+        echo "$key => $value<br/>";
+    }
+}
+
+function isLoggedIn()
+{
+    if(isset($_SESSION["login"]) && isset($_SESSION["email"]))
+        return TRUE;
+    return FALSE;
+}
+
 function getGUID(){
     if (function_exists('com_create_guid')){
         return com_create_guid();

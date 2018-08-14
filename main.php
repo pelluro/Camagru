@@ -1,11 +1,12 @@
 <?php
-$titlePage = "Main";
-include('./header.php');
-?>
-<div class="alert-info">
+if(isset($_SESSION["firstlogin"]))
+{
+    unset($_SESSION["firstlogin"]);
+    ?>
+    <div class="alert alert-success">
+        Connection successful.
+    </div>
+    <?php
+}
 
-<h1>Connexion reussi !</h1>
-</div>
-<?php
-include('./footer.php');
 ?>
