@@ -24,6 +24,24 @@ function isLoggedIn()
     return FALSE;
 }
 
+function registerMessageHeader($message,$category)
+{
+	$_SESSION['uniquemessage'] = $message;
+	$_SESSION['uniquemessagecat'] = $category;
+}
+
+function printMessageHeader()
+{
+	if(isset($_SESSION['uniquemessage']) && isset($_SESSION['uniquemessagecat']))
+	{
+		$message = $_SESSION['uniquemessage'];
+		$category = $_SESSION['uniquemessagecat'];
+		echo "<div class='alert alert-$category'>$message</div>";
+		unset($_SESSION['uniquemessage']);
+		unset($_SESSION['uniquemessagecat']);
+	}
+}
+
 function getGUID(){
     if (function_exists('com_create_guid')){
         return com_create_guid();
@@ -42,7 +60,7 @@ function getGUID(){
     }
 }
 
-function mail_confirmation($email, $login, $rand)
+function mail_confirmation($email, $login, $guid)
 {
     $subject = "Email confirmation";
     $headers = 'Content-Type: text/html; charset=ISO-8859-1' . "\r\n" . 'From: noreply@camagru.com' . "\r\n" . 'X-Mailer: PHP/' .phpversion();
@@ -55,7 +73,7 @@ function mail_confirmation($email, $login, $rand)
                 <div align="left" class="article-content">
                     <p>Hi '.$login.'</p>
                     <p>Please click on the below link to verify your account</p>
-                    <a href="http://localhost:8080/camagru/confirmation.php?login='.$login.'&email='.$email.'&confirmation_code='.$rand.'">Confirm my account</a>
+                    <a href="<?=str_replace("register","confirmation",$_SERVER["HTTP_REFERER"])?>?login='<?=$login?>'&email='<?=$email?>'&confirmation_code='<?=$guid?>'">Confirm my account</a>
                     <p>You will not have access to camagru until you click on the above link</p>
                 </div>
             </td>

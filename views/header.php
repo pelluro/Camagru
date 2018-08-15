@@ -5,7 +5,7 @@ require_once("./functions/functions.php");
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <title><?=$titlePage?></title>
 </head>
 <body>
@@ -13,7 +13,7 @@ require_once("./functions/functions.php");
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="../index.php">Camagru</a>
+                <a class="navbar-brand" href="./index.php">Camagru</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -25,15 +25,15 @@ require_once("./functions/functions.php");
                     if(!isLoggedIn())
                     {
                         ?>
-                        <li><a href="../connexion.php">Sign in</a></li>
-                        <li><a href="../first_connect.php">Sign up</a></li>
+                        <li><a href="./login.php">Sign in</a></li>
+                        <li><a href="./register.php">Sign up</a></li>
                         <?php
                     }
                     else
                     {
                         ?>
                         <li><a href="#">[<?=$_SESSION["login"]?>]</a></li>
-                        <li><a href="../logout.php">Sign out</a></li>
+                        <li><a href="./logout.php">Sign out</a></li>
                         <?php
                     }
                     ?>
@@ -42,3 +42,4 @@ require_once("./functions/functions.php");
             </div>
         </div>
     </nav>
+	<?php printMessageHeader();?>

@@ -1,32 +1,21 @@
 <?php
-if(!isset($_POST['login']) || !isset($_POST['passwd']))
-{
-    header('location: error_connexion.php');
-    exit;
-}
-else
-{
-    $login = htmlentities($_POST['login'], ENT_QUOTES, "UTF-8");
-    $passwd = htmlentities($_POST['passwd'], ENT_QUOTES,"UTF-8");
-    $passwd = hash('whirlpool', $passwd);
-    $req = "SELECT email, login, passwd FROM users";
-    $query = $dbConnection->prepare($req);
-    $query->execute();
-    if ($query->rowCount() > 0) {
-        while ($data = $query->fetch()) {
-            if ($login === $data['login'] AND $passwd === $data['passwd']) {
-                $_SESSION['login'] = $login;
-                $email = $data['email'];
-                $_SESSION['email'] = $email;
-                $_SESSION['firstlogin'] = 1;
-                header('location: index.php');
-                exit;
-            } else
-                header('location: error_connexion.php');
-        }
-    }
-    else
-        header('location: error_connexion.php');
-    $query->closeCursor();
-}
+    $titlePage = "Connexion Page";
+    include('./views/header.php');
+?>
+<div class="panel panel-info">
+    <div class="panel-heading">Sign In</div>
+	<div class="panel-body">
+    <form id="form" action="business/login.php" method="POST">
+        Login : <input type="text" id="login" name="login" autocomplete="off" value="" />
+        <br/>
+        Password : <input type="password" id="passwd" name="passwd" autocomplete="off" value=""/>
+        <br/>
+        <input id="reset" type="submit" name="submit" value="Sign In" style="...">
+    </form>
+    <br/>
+    <a href="./password_forgotten.php"> Forgot Password ?</a>
+	</div>
+</div>
+<?php
+	include('./views/footer.php');
 ?>
