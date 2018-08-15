@@ -29,6 +29,7 @@ else
 			{
 				registerMessageHeader("Incorrect login or password.","danger");
                 header('location: ../login.php');
+                exit;
 			}
         }
     }
@@ -36,6 +37,7 @@ else
 	{
 		registerMessageHeader("Unknown account.","danger");
         header('location: ../login.php');
+        exit;
 	}
     $query->closeCursor();
 }

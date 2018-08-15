@@ -1,4 +1,6 @@
 <?php
+require_once("functions_login.php");
+
 function is_in_array($value, $array)
 {
 	foreach($array as $row)
@@ -60,36 +62,29 @@ function getGUID(){
     }
 }
 
-
-?>
-<?php
-function mail_password($email, $login, $rand)
+function execQuerySelect($dbConnection, $req)
 {
-$subject = "Reset Your Password";
-$headers = 'Content-Type: text/html; charset=ISO-8859-1' . "\r\n" . 'From: noreply@camagru.com' . "\r\n" . 'X-Mailer: PHP/' .phpversion();
-?>
-<html>
-<body>
-<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-        <td class="w580" width="580">
-            <h2 style="color:#0E7693; font-size:22px; padding-top:12px;"> Account verification  </h2>
-            <div align="left" class="article-content">
-                <p>Hi '.$login.'</p>
-                <p>Someone has requested a link to change your password. You can do this through the link below.</p>
-                <a href="http://localhost:8100/camagru/password.php?login='.$login.'&email='.$email.'&confirmation_code='.$rand.'">Change my password</a>
-                <p>If you did not request this, please ignore this email</p>
-                <p>Your password will not change until you access the link above and create a new one</p>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="w580" width="580" height="1" bgcolor="#c7c5c5"></td>
-    </tr>
-</table>
-</body>
-</html>';
-<?php
-mail($email, $subject, $message, $headers);
+    $query = $dbConnection->prepare($req);
+    $query->execute();
+    if ($query->rowCount() == 0)
+        return null;
+    $result = array();
+    while ($data = $query->fetch()) {
+        $newrow = array();
+        foreach($data as $key => $value)
+        {
+            $newrow[$key] = $value;
+        }
+        $result[] = $newrow;
+    }
+    $query->closeCursor();
+    return $result;
+}
+
+function execQuery($dbConnection, $req)
+{
+    $query = $dbConnection->prepare($req);
+    $query->execute();
 }
 ?>
+

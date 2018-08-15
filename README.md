@@ -2,21 +2,10 @@ Camagru
 -----------------------------------
 TO DO LIST
 
-- INSCRIPTION 
-  - adresse mail.
-  - nom user.
-  - mot de passe. (sécurisé) 
-  - mail de confirmation d'inscription. 
+- MAILS
 
-- CONNEXION
-  - nom user. 
-  - mot de passe.
-
-- RESET MOT DE PASSE
-  - mail pour modification de mot de passe.
-
-- LOGOUT
-  - possibilité de se deloguer depuis toute les pages. 
+- LOGIN
+    - Password confirmation
 
 - MONTAGE
   - PARTIE ACCESSIBLE UNIQUEMENT AUX USERS LOG 
@@ -39,6 +28,8 @@ TO DO LIST
   - possibilité de liker les photos.
   - possibiliteé de commenter les photos. 
     - envoyer un mail au proprio quand une image recois un nouveau commentaire.
+
+- CSS !!!!
 
 - BONUS
   - Apercu du rendu final en live sur la cam.

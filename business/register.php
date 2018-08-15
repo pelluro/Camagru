@@ -22,6 +22,7 @@ else
 	{
 		registerMessageHeader("This login or email address is already used. Please try another one!","danger");
 		header('location: ../register.php');
+		exit;
 	}
 	else
 	{
@@ -34,6 +35,7 @@ else
 			registerMessageHeader(" <p>Thank You For Registering!</p> <p>An email has been sent to this address: <b>$email</b>.</p><p>Please click on the link you received to confirm your account.</p>","success");
 			mail_confirmation($email,$login,$token);
 			header( "location: ../index.php");
+			exit;
 		}
 		else
 		{
