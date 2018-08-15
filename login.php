@@ -1,8 +1,4 @@
 <?php
-$titlePage = "Login Page";
-include('./views/header.php');
-print_array($_POST);
-
 if(!isset($_POST['login']) || !isset($_POST['passwd']))
 {
     header('location: error_connexion.php');
@@ -16,7 +12,6 @@ else
     $req = "SELECT email, login, passwd FROM users";
     $query = $dbConnection->prepare($req);
     $query->execute();
-
     if ($query->rowCount() > 0) {
         while ($data = $query->fetch()) {
             if ($login === $data['login'] AND $passwd === $data['passwd']) {
@@ -34,6 +29,4 @@ else
         header('location: error_connexion.php');
     $query->closeCursor();
 }
-
-include('./views/footer.php');
 ?>
