@@ -1,33 +1,33 @@
 <?php
-function check_existing_login($login)
+function mail_confirmation($email, $login, $guid)
 {
-	global $db;
-	$sql = "SELECT username FROM users_shop";
-	$result = mysqli_query($db, $sql);
-	while ($row = mysqli_fetch_array($result))
-		if ($row[0] == $login)
-			return TRUE;
-	return FALSE;
+    $subject = "Email confirmation";
+    $headers = 'Content-Type: text/html; charset=ISO-8859-1' . "\r\n" . 'From: noreply@camagru.com' . "\r\n" . 'X-Mailer: PHP/' .phpversion();
+    $message ="Bienvenue sur Camagru!";
+    ?>
+    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td class="w580" width="580">
+                <h2 style="color:#0E7693; font-size:22px; padding-top:12px;"> Account verification  </h2>
+                <div align="left" class="article-content">
+                    <p>Hi '.$login.'</p>
+                    <p>Please click on the below link to verify your account</p>
+                    <a href="<?=str_replace("register","confirmation",$_SERVER["HTTP_REFERER"])?>?login='<?=$login?>'&email='<?=$email?>'&confirmation_code='<?=$guid?>'">Confirm my account</a>
+                    <p>You will not have access to camagru until you click on the above link</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="w580" width="580" height="1" bgcolor="#c7c5c5"></td>
+        </tr>
+    </table>
+    <?php
+    mail($email, $subject, $message, $headers);
 }
 
-function check_matching_psswd($login, $hash)
+function execQuery($req)
 {
-	global $db;
-	$sql = "SELECT username,password FROM users_shop";
-	$result = mysqli_query($db, $sql);
-	while ($row = mysqli_fetch_array($result))
-		if ($row[0] == $login && $row[1] == $hash)
-			return TRUE;
-	return FALSE;
-}
+    $query = $dbConnetion->prepare($req);
 
-function add_user($login, $psswd)
-{
-	global $db;
-	$login = mysqli_real_escape_string($db, $login);
-	$psswd = mysqli_real_escape_string($db, $psswd);
-	$sql = "INSERT INTO users_shop (username, password) VALUES ('$login', '$psswd')";
-	if (!mysqli_query($db, $sql))
-	    die("Error: " . $sql . "<br>Stacktrace :" . mysqli_error($db));
 }
 ?>
