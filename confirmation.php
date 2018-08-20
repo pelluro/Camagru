@@ -10,7 +10,7 @@ $login=$_GET['login'];
 $email=$_GET['email'];
 $token=$_GET['confirmation_code'];
 
-$req= "SELECT id FROM users WHERE login = '$login' AND email = '$email' AND token ='$token' ";
+$req= "SELECT id FROM users WHERE login = '$login' AND token ='$token' ";
 $data=execQuerySelect($dbConnection, $req);
 if ($data == null)
 {
