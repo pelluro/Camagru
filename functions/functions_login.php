@@ -37,7 +37,7 @@ function mail_password($email, $login, $guid)
     <body>
       Hello ' . htmlspecialchars($login) . ' </br>
                 <p>Someone has requested a link to change your password. You can do this through the link below.</p>
-                <a href="http://localhost:8100/Camagru/password_forgotten.php?login='.$login.'&confirmation_code='.$guid.'">Change my password</a>
+                <a href="http://localhost:8100/Camagru/password_reset.php?login='.$login.'&confirmation_code='.$guid.'">Change my password</a>
                 <p>If you did not request this, please ignore this email</p>
                 <p>Your password will not change until you access the link above and create a new one</p>
             </body>
