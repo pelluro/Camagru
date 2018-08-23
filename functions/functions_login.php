@@ -44,6 +44,6 @@ function mail_password($email, $login, $guid)
      </html>
     ';?>
     <?php
-    mail($email, $subject, $message, $headers);
+    var_dump(mail($email, $subject, $message, $headers));
 }
 ?>
