@@ -21,7 +21,7 @@ function print_array($array)
 
 function isLoggedIn()
 {
-    if(isset($_SESSION["login"]) && isset($_SESSION["email"]))
+    if(isset($_SESSION["currentUser"]) && is_a($_SESSION["currentUser"], "User"))
         return TRUE;
     return FALSE;
 }
@@ -62,29 +62,5 @@ function getGUID(){
     }
 }
 
-function execQuerySelect($dbConnection, $req)
-{
-    $query = $dbConnection->prepare($req);
-    $query->execute();
-    if ($query->rowCount() == 0)
-        return null;
-    $result = array();
-    while ($data = $query->fetch()) {
-        $newrow = array();
-        foreach($data as $key => $value)
-        {
-            $newrow[$key] = $value;
-        }
-        $result[] = $newrow;
-    }
-    $query->closeCursor();
-    return $result;
-}
-
-function execQuery($dbConnection, $req)
-{
-    $query = $dbConnection->prepare($req);
-    $query->execute();
-}
 ?>
 

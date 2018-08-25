@@ -11,20 +11,15 @@ if(!isset($_POST['email']))
     }
 
 $email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8");
-$req = "SELECT * FROM users WHERE email ='$email'";
-$data= execQuerySelect($dbConnection,$req);
-
-if($data == null)
+$user = $dbConnector->getUserByEmail($email);
+if($user == null)
 {
     registerMessageHeader("Email unknown.", "danger");
     header('location: ../password_forgotten.php');
     exit;
 }
-$user=$data[0];
-$userid = $user['id'];
-$token = getGUID();
-$req = "UPDATE users SET token='$token' WHERE id=$userid";
-execQuery($dbConnection,$req);
+$user->resetToken();
+$dbConnector->saveUser($user);
 registerMessageHeader("An email has been sent to $email, please check for changing password.","warning");
 mail_password($email,$user['login'],$token);
 header('location: ../index.php');
