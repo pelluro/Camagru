@@ -9,15 +9,12 @@ if (!isset($_GET['login']) || !isset($_GET['email']) || !isset($_GET['confirmati
 $login=$_GET['login'];
 $email=$_GET['email'];
 $token=$_GET['confirmation_code'];
-
-$req= "SELECT id FROM users WHERE login = '$login' AND email = '$email' AND token ='$token' ";
-$data=execQuerySelect($dbConnection, $req);
-if ($data == null) {
+$user = $dbConnector->getUserByEmailAndLoginAndToken($email,$login,$token);
+if ($user == null) {
     registerMessageHeader("User unknown", "danger");
     header("location: index.php");
     exit;
 }
-
 ?>
 <div class="panel panel-info">
     <div class="panel-heading">Reset password</div>

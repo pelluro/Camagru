@@ -1,6 +1,9 @@
 <?php
-function mail_confirmation($email, $login, $guid)
+function mail_confirmation($user)
 {
+    $login = $user->login;
+    $guid = $user->getToken();
+    $email = $user->email;
     $subject = "Email confirmation";
     $headers = 'From: Minh PHAM <no-reply@camagru.com>'."\r\n";
     $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
@@ -22,8 +25,11 @@ function mail_confirmation($email, $login, $guid)
     var_dump(mail($email, $subject, $message, $headers));
 }
 
-function mail_password($email, $login, $guid)
+function mail_password($user)
 {
+    $login = $user->login;
+    $guid = $user->getToken();
+    $email = $user->email;
     $subject = "Reset Your Password";
     $headers = 'From: Minh PHAM <no-reply@camagru.com>'."\r\n";
     $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";

@@ -2,20 +2,34 @@
 
 class User
 {
-    public $id;
+    private $id;
     public $login;
     public $email;
     private $passwd;
     private $token;
     public $verified;
+
     public function __construct($row)
     {
-        $this->id = $row["id"];
-        $this->login = $row["login"];
-        $this->email = $row["email"];
-        $this->passwd = $row["passwd"];
-        $this->token = $row["token"];
-        $this->verified = $row["verified"];
+        if($row !=null) {
+            $this->id = $row["id"];
+            $this->login = $row["login"];
+            $this->email = $row["email"];
+            $this->passwd = $row["passwd"];
+            $this->token = $row["token"];
+            $this->verified = $row["verified"];
+        }
+        else
+        {
+            $this->token = getGUID();
+            $this->id = 0;
+            $this->verified = 0;
+        }
+    }
+
+    public function getID()
+    {
+        return $this->id;
     }
 
     public function resetToken()

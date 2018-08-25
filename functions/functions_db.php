@@ -31,7 +31,7 @@ class DBConnector
     function execQuery($req)
     {
         $query = $this->dbConnection->prepare($req);
-        $query->execute();
+        return $query->execute();
     }
 
     function getUsers()
@@ -65,6 +65,28 @@ class DBConnector
         return new User($row);
     }
 
+    function getUserByEmailAndLoginAndToken($email,$login,$token)
+    {
+        $req = "SELECT * FROM users WHERE email='$email' and login='$login' and token='$token'";
+        $row = $this->execQuerySelect($req);
+        if($row == null)
+            return null;
+        return new User($row);
+    }
+
+    function getUserByEmailOrLogin($email,$login)
+    {
+        $req = "SELECT * FROM users WHERE email='$email' OR login='$login'";
+        $data = $this->execQuerySelect($req);
+        $users = array();
+        foreach ($data as $row)
+        {
+            $user = new User($row);
+            $users[]=$user;
+        }
+        return $users;
+    }
+
     function saveUser($user)
     {
         if($user->id == 0)
@@ -72,15 +94,14 @@ class DBConnector
             $passwd = $user->getPassword();
             $token = $user->getToken();
             $req = "INSERT INTO users (email, login, passwd, token, verified) VALUES ('{$user->email}','{$user->login}','$passwd','$token',0)";
-            $this->execQuery($req);
         }
         else
         {
             $passwd = $user->getPassword();
             $token = $user->getToken();
             $req = "UPDATE users SET email='{$user->email}', passwd='$passwd', token='$token', verified ={$user->verified}";
-            $this->execQuery($req);
         }
+        return $this->execQuery($req);
     }
 
 }

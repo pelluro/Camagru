@@ -21,6 +21,6 @@ if($user == null)
 $user->resetToken();
 $dbConnector->saveUser($user);
 registerMessageHeader("An email has been sent to $email, please check for changing password.","warning");
-mail_password($email,$user['login'],$token);
+mail_password($user);
 header('location: ../index.php');
 ?>
