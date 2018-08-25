@@ -1,4 +1,5 @@
 <?php
+require_once("../model/DBConnector.php");
 session_start();
 require_once("../config/database.php");
 require_once("../functions/functions.php");
@@ -15,6 +16,7 @@ else
     $user = $dbConnector->getUser($login,$passwd);
     if($user != null)
     {
+        $_SESSION["currentUser"] = "{$user->login}/{$user->email}";
         registerMessageHeader("Connection successful.","success");
         header('location: ../index.php');
         exit;

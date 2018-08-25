@@ -1,4 +1,5 @@
 <?php
+require_once("./model/DBConnector.php");
 session_start();
 require_once("./config/database.php");
 require_once("./functions/functions.php");
@@ -9,20 +10,16 @@ if (!isset($_GET['login']) || !isset($_GET['email']) || !isset($_GET['confirmati
 $login=$_GET['login'];
 $email=$_GET['email'];
 $token=$_GET['confirmation_code'];
-
-$req= "SELECT id FROM users WHERE login = '$login' AND token ='$token' ";
-$data=execQuerySelect($dbConnection, $req);
-if ($data == null)
+$user = $dbConnector->getUserByEmailAndLoginAndToken($email,$login,$token);
+if ($user == null)
 {
     registerMessageHeader("User unknown", "danger");
     header("location: index.php");
     exit;
 }
-$id=$data[0]['id'];
-$req="UPDATE users SET verified = 1 WHERE id=$id";
-execQuery($dbConnection, $req);
+$user->verified=1;
+$dbConnector->saveUser($user);
 registerMessageHeader("Confirmation Success!", "success");
-$_SESSION['login'] = $login;
-$_SESSION['email'] = $email;
+$_SESSION["currentUser"] = "{$user->login}/{$user->email}";
 header("location: index.php");
 ?>

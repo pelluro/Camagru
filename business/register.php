@@ -1,4 +1,5 @@
 <?php
+require_once("../model/DBConnector.php");
 session_start();
 require_once("../config/database.php");
 require_once("../functions/functions.php");
@@ -15,7 +16,7 @@ else
 	$login = htmlentities($_POST['login'], ENT_QUOTES, "UTF-8");
 	$passwd = htmlentities($_POST['passwd'], ENT_QUOTES, "UTF-8");
 	$users = $dbConnector->getUserByEmailOrLogin($email,$login);
-	if ($user != null && count($user) > 0)
+	if ($users != null && count($users) > 0)
 	{
 		registerMessageHeader("This login or email address is already used. Please try another one!","danger");
 		header('location: ../register.php');

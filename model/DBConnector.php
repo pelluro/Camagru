@@ -1,4 +1,5 @@
 <?php
+require_once "User.php";
 
 class DBConnector
 {
@@ -89,7 +90,7 @@ class DBConnector
 
     function saveUser($user)
     {
-        if($user->id == 0)
+        if($user->getID() == 0)
         {
             $passwd = $user->getPassword();
             $token = $user->getToken();

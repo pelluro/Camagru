@@ -27,6 +27,10 @@ class User
         }
     }
 
+    function __toString(){
+        return "{$this->login}";
+    }
+
     public function getID()
     {
         return $this->id;

@@ -21,7 +21,7 @@ function print_array($array)
 
 function isLoggedIn()
 {
-    if(isset($_SESSION["currentUser"]) && is_a($_SESSION["currentUser"], "User"))
+    if(isset($_SESSION["currentUser"]))
         return TRUE;
     return FALSE;
 }
