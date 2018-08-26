@@ -29,7 +29,14 @@ else
         $user->email=$email;
         $user->login=$login;
         $result = $dbConnector->saveUser($user);
-		if ($result)
+        $userCreated = $dbConnector->getUserByEmailOrLogin($email,$login);
+        $id = $userCreated[0]->getID();
+        $paramUser = new ParamUser(null);
+        $paramUser->user_id=$id;
+        $paramUser->param_name = NOTIF_COMMENT_MYPIC;
+        $paramUser->param_value = 1;
+        $result2 = $dbConnector->saveParamUser($paramUser);
+		if ($result && $result2)
 		{
 			registerMessageHeader(" <p>Thank You For Registering!</p> <p>An email has been sent to this address: <b>$email</b>.</p><p>Please click on the link you received to confirm your account.</p>","success");
 			mail_confirmation($user);

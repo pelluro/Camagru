@@ -2,11 +2,6 @@ Camagru
 -----------------------------------
 TO DO LIST
 
-- MAILS
-
-- LOGIN
-    - Password confirmation
-
 - MONTAGE
   - PARTIE ACCESSIBLE UNIQUEMENT AUX USERS LOG 
     - SECTION PRINCIPALE
@@ -29,7 +24,7 @@ TO DO LIST
   - possibiliteé de commenter les photos. 
     - envoyer un mail au proprio quand une image recois un nouveau commentaire.
 
-- CSS !!!!
+- CSS
 
 - BONUS
   - Apercu du rendu final en live sur la cam.
@@ -37,11 +32,3 @@ TO DO LIST
   - Pagination infini sur la partie galerie.
   - Partager ses photos sur les reseau sociaux.
   - Pouvoir faire un gif.
-
-- FICHIERS OBLIGATOIRES.
-  - index.php a la racine. 
-  -fichier config/database.php contenant la config BDD avec PDO. 
-    $DB_DSN = ...; 
-    $DB_USER = ...; 
-    $DB_PASSWORD = ...; 
-  - fichier config/setup.php pour creer ou recreer le shema de la base. (OK)# Camagru

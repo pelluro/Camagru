@@ -1,5 +1,6 @@
 <?php
 require_once("functions_login.php");
+define("NOTIF_COMMENT_MYPIC","NOTIF_COMMENT_MYPIC");
 
 function is_in_array($value, $array)
 {
