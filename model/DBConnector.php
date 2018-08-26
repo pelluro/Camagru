@@ -41,10 +41,9 @@ class DBConnector
 
     function getUsers()
     {
-        $data = $this->execQuerySelect($this->dbConnection, "SELECT * FROM users");
+        $data = $this->execQuerySelect("SELECT * FROM users");
         if ($data == null)
             return null;
-        print_array($data);
         $users = array();
         foreach ($data as $row) {
             $user = new User($row);
@@ -110,6 +109,20 @@ class DBConnector
         return $this->execQuery($req);
     }
 
+    function getCommentsByPicture($pic_id)
+    {
+        $req = "SELECT * FROM comments WHERE pic_id=$pic_id ORDER BY date";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return null;
+        $comments = array();
+        foreach ($data as $row) {
+            $comment = new Comment($row);
+            $comments[] = $comment;
+        }
+        return $comments;
+    }
+
     function saveComment($comment)
     {
         $id = $comment->getID();
@@ -129,6 +142,40 @@ class DBConnector
         } else
             return null;
         return $this->execQuery($req);
+    }
+    function getPictures()
+    {
+        $data = $this->execQuerySelect("SELECT * FROM pictures ORDER BY filedate");
+        if ($data == null)
+            return null;
+        $pictures = array();
+        foreach ($data as $row) {
+            $picture = new Picture($row);
+            $pictures[] = $picture;
+        }
+        return $pictures;
+    }
+
+    function getPicturesByUser($user_id)
+    {
+        $data = $this->execQuerySelect("SELECT * FROM pictures WHERE user_id=$user_id ORDER BY filedate");
+        if ($data == null)
+            return null;
+        $pictures = array();
+        foreach ($data as $row) {
+            $picture = new Picture($row);
+            $pictures[] = $picture;
+        }
+        return $pictures;
+    }
+
+    function getPicture($id)
+    {
+        $req = "SELECT * FROM pictures WHERE id=$id";
+        $row = $this->execQuerySelect($req);
+        if ($row == null)
+            return null;
+        return new Picture($row[0]);
     }
 
     function savePicture($picture)

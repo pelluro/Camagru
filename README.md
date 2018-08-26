@@ -19,7 +19,8 @@ TO DO LIST
         - possibilité de supprimer ses propres images pas les autres.
 
 - GALERIE
-  - doit afficher toutes les photos de tout les membres par date et etre paginé.
+  - Paginer.
+  - Navigation entre les photos
   - possibilité de liker les photos.
   - possibiliteé de commenter les photos. 
     - envoyer un mail au proprio quand une image recois un nouveau commentaire.

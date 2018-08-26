@@ -23,7 +23,7 @@ if(isset($requireLogin) && $requireLogin == TRUE && !isLoggedIn())
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="../photos.php">Galery</a></li>
+                    <li><a href="./index.php">Galery</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php

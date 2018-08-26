@@ -1,9 +1,6 @@
 <?php
-$titlePage = "Index";
+$titlePage = "Gallery";
 include('./views/header.php');
-if(isLoggedIn())
-{
-    include("main.php");
-}
+include("gallery.php");
 include('./views/footer.php');
-?>
+
