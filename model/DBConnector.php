@@ -1,5 +1,10 @@
 <?php
+require_once "Entity.php";
 require_once "User.php";
+require_once "Picture.php";
+require_once "Like.php";
+require_once "Comment.php";
+require_once "ParamUser.php";
 
 class DBConnector
 {
@@ -38,6 +43,9 @@ class DBConnector
     function getUsers()
     {
         $data = $this->execQuerySelect($this->dbConnection,"SELECT * FROM users");
+        if($data == null)
+            return null;
+        print_array($data);
         $users = array();
         foreach ($data as $row)
         {
@@ -54,7 +62,7 @@ class DBConnector
         $row = $this->execQuerySelect($req);
         if($row == null)
             return null;
-        return new User($row);
+        return new User($row[0]);
     }
 
     function getUserByEmail($email)
@@ -63,7 +71,7 @@ class DBConnector
         $row = $this->execQuerySelect($req);
         if($row == null)
             return null;
-        return new User($row);
+        return new User($row[0]);
     }
 
     function getUserByEmailAndLoginAndToken($email,$login,$token)
@@ -72,13 +80,15 @@ class DBConnector
         $row = $this->execQuerySelect($req);
         if($row == null)
             return null;
-        return new User($row);
+        return new User($row[0]);
     }
 
     function getUserByEmailOrLogin($email,$login)
     {
         $req = "SELECT * FROM users WHERE email='$email' OR login='$login'";
         $data = $this->execQuerySelect($req);
+        if($data == null)
+            return null;
         $users = array();
         foreach ($data as $row)
         {
@@ -90,7 +100,8 @@ class DBConnector
 
     function saveUser($user)
     {
-        if($user->getID() == 0)
+        $id=$user->getID();
+        if($id == 0)
         {
             $passwd = $user->getPassword();
             $token = $user->getToken();
@@ -100,9 +111,63 @@ class DBConnector
         {
             $passwd = $user->getPassword();
             $token = $user->getToken();
-            $req = "UPDATE users SET email='{$user->email}', passwd='$passwd', token='$token', verified ={$user->verified}";
+            $req = "UPDATE users SET email='{$user->email}', passwd='$passwd', token='$token', verified ={$user->verified} WHERE id=$id";
         }
         return $this->execQuery($req);
     }
 
+}
+
+function saveComment($comment)
+{
+    $id = $comment->getID();
+    if ($id == 0) {
+        $req = "INSERT INTO comments (comment, user_id, pic_id) VALUES ('{$comment->comment}',{$comment->user_id},{ $comment->pic_id})";
+    } else {
+        $req = "UPDATE comments SET comment='{$comment->comment}' WHERE id=$id ";
+    }
+    return $this->execQuery($req);
+}
+
+function saveLike($like)
+{
+    $id=$like->getID();
+    if($id == 0)
+    {
+        $req = "INSERT INTO likes (user_id, pic_id) VALUES ('{$like->user_id}','{$like->pic_id}')";
+    }
+    else
+        return null;
+    return $this->execQuery($req);
+}
+function savePicture($picture)
+{
+    $id = $picture->getID();
+    if ($id == 0) {
+        $req = "INSERT INTO pictures (filename, filedate, user_id) VALUES ('{$picture->filename}','{$picture->filedate}','{ $picture->user_id}')";
+    } else {
+        $req = "UPDATE pictures SET filename='{$picture->filename}', filedate='{$picture->filedate}', user_id='{$picture->user_id}' WHERE id=$id";
+    }
+    return $this->execQuery($req);
+}
+
+function getParamUser($user_id, $param_name)
+{
+    $req = "SELECT * FROM paramusers WHERE user_id=$user_id AND param_name='$param_name'";
+    $data = $this->execQuerySelect($req);
+    if($data == null)
+        return null;
+    else
+        return new ParamUser($data[0]);
+}
+
+function saveParamUser($paramUser)
+{
+    $paramUser2 = getParamUser($paramUser->user_id, $paramUser->param_name);
+    if ($paramUser2 == null) {
+        $req = "INSERT INTO paramusers (user_id, param_name, param_value) VALUES ({$paramUser2->user_id},'{$paramUser2->param_name}','{ $paramUser2->param_value}')";
+    } else {
+        $req = "UPDATE paramusers SET param_value='{$paramUser2->param_value}' WHERE user_id={$paramUser2->user_id} AND param_value='{$paramUser2->param_name}' ";
+    }
+    return $this->execQuery($req);
 }

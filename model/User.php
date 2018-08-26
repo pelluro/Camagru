@@ -1,8 +1,7 @@
 <?php
 
-class User
+class User extends Entity
 {
-    private $id;
     public $login;
     public $email;
     private $passwd;
@@ -11,8 +10,8 @@ class User
 
     public function __construct($row)
     {
+        parent::__construct($row);
         if($row !=null) {
-            $this->id = $row["id"];
             $this->login = $row["login"];
             $this->email = $row["email"];
             $this->passwd = $row["passwd"];
@@ -22,18 +21,12 @@ class User
         else
         {
             $this->token = getGUID();
-            $this->id = 0;
             $this->verified = 0;
         }
     }
 
-    function __toString(){
+    public function __toString(){
         return "{$this->login}";
-    }
-
-    public function getID()
-    {
-        return $this->id;
     }
 
     public function resetToken()

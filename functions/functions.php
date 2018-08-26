@@ -15,7 +15,14 @@ function print_array($array)
 {
     foreach ($array as $key => $value)
     {
-        echo "$key => $value<br/>";
+        if(is_array($value))
+        {
+            echo "$key => {<br/>";
+            print_array($value);
+            echo "}";
+        }
+        else
+            echo "$key => $value<br/>";
     }
 }
 

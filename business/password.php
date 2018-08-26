@@ -25,7 +25,7 @@ if($user == null)
     header('location: ../password_forgotten.php');
     exit;
 }
-$passwd = htmlentities( ENT_QUOTES, "UTF-8");
+$passwd = htmlentities( $_POST['passwd'],ENT_QUOTES, "UTF-8");
 $user->setPassword($passwd);
 $user->verified=1;
 $dbConnector->saveUser($user);

@@ -10,6 +10,7 @@ $login=$_GET['login'];
 $email=$_GET['email'];
 $token=$_GET['confirmation_code'];
 $user = $dbConnector->getUserByEmailAndLoginAndToken($email,$login,$token);
+
 if ($user == null) {
     registerMessageHeader("User unknown", "danger");
     header("location: index.php");

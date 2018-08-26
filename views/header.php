@@ -33,7 +33,7 @@ require_once("./functions/functions.php");
                     else
                     {
                         ?>
-                        <li><a href="#">[<?$_SESSION["currentUser"]?>]</a></li>
+                        <li><a href="#">[<?=$_SESSION["currentUser"]?>]</a></li>
                         <li><a href="./logout.php">Sign out</a></li>
                         <?php
                     }

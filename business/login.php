@@ -16,7 +16,7 @@ else
     $user = $dbConnector->getUser($login,$passwd);
     if($user != null)
     {
-        $_SESSION["currentUser"] = "{$user->login}/{$user->email}";
+        $_SESSION["currentUser"] = $user->login;
         registerMessageHeader("Connection successful.","success");
         header('location: ../index.php');
         exit;
