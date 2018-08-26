@@ -34,8 +34,17 @@ else {
             {
                 foreach ($comments as $comment)
                 {
-                    echo "{$comment->comment}<br/>";
+                    echo "{$comment->content}<br/>";
                 }
+            }
+            if (isLoggedIn())
+            {?>
+                <form id="form" action="business/comments.php" method="POST">
+                     <input type="text" id="" name="comment" autocomplete="off" value="" autofocus="autofocus" placeholder="enter your comment here"/>
+                    <input type="hidden" name="pic_id" value="<?=$picture->getID();?>"/>
+                    <input id="reset" type="submit" name="submit" value="Submit">
+                </form>
+            <?php
             }
             ?>
         </div>

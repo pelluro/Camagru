@@ -2,7 +2,7 @@
 
 class Comment extends Entity
 {
-    public $comment;
+    public $content;
     public $user_id;
     public $pic_id;
     public $date;
@@ -12,7 +12,7 @@ class Comment extends Entity
         parent::__construct($row);
         if($row != null)
         {
-            $this->comment=$row['comment'];
+            $this->content=$row['content'];
             $this->pic_id=$row["pic_id"];
             $this->user_id=$row["user_id"];
             $this->date=$row["date"];

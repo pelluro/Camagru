@@ -127,9 +127,9 @@ class DBConnector
     {
         $id = $comment->getID();
         if ($id == 0) {
-            $req = "INSERT INTO comments (comment, user_id, pic_id) VALUES ('{$comment->comment}',{$comment->user_id},{ $comment->pic_id})";
+            $req = "INSERT INTO comments (content, user_id, pic_id, date) VALUES ('{$comment->content}',{$comment->user_id},{$comment->pic_id},'{$comment->date}')";
         } else {
-            $req = "UPDATE comments SET comment='{$comment->comment}' WHERE id=$id ";
+            $req = "UPDATE comments SET content='{$comment->content}' WHERE id=$id ";
         }
         return $this->execQuery($req);
     }

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: pellu
- * Date: 8/26/2018
- * Time: 11:56 AM
- */
 
 class Entity
 {
