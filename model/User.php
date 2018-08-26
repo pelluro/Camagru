@@ -41,7 +41,7 @@ class User extends Entity
 
     public function setPassword($password)
     {
-        $this->passwd = hash('whirlpool', $password);
+        $this->passwd = hash('whirlpool', htmlentities($password, ENT_QUOTES, "UTF-8"));
     }
 
     public function getPassword()

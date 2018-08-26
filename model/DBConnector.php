@@ -111,7 +111,7 @@ class DBConnector
         {
             $passwd = $user->getPassword();
             $token = $user->getToken();
-            $req = "UPDATE users SET email='{$user->email}', passwd='$passwd', token='$token', verified ={$user->verified} WHERE id=$id";
+            $req = "UPDATE users SET login='{$user->login}',email='{$user->email}', passwd='$passwd', token='$token', verified ={$user->verified} WHERE id=$id";
         }
         return $this->execQuery($req);
     }

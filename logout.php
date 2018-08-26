@@ -1,5 +1,6 @@
 <?php
 session_start();
-unset($_SESSION['currentUser']);
+require_once ("./functions/functions_login.php");
+logout();
 header("location: index.php");
 ?>

@@ -20,6 +20,6 @@ if ($user == null)
 $user->verified=1;
 $dbConnector->saveUser($user);
 registerMessageHeader("Confirmation Success!", "success");
-$_SESSION["currentUser"] = "{$user->login}/{$user->email}";
+login($user);
 header("location: index.php");
 ?>

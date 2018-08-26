@@ -2,15 +2,12 @@
 $titlePage = "Forgot Pass";
 include('./views/header.php');
 ?>
-<div class="alert alert-info">
-
-    <h1>Did you forgot your pass?</h1>
-    <div class= "alert alert-success">
-        <p>Please Enter your email address below and we'll send you password reset instructions.</p>
-
+<div class="panel panel-info">
+    <div class="panel-heading">Did you forgot your pass?</div>
+    <div class= "panel-body">
+        <p>Please enter your email address below and we'll send you password reset instructions.</p>
         <form id="form" action="business/forgot.php" method="POST">
-            <input type="email" name="email" value placeholder="Email address"/>
-            <br />
+            <input type="email" name="email" placeholder="Email address" autofocus="autofocus" autocomplete="off"/>
             <input id="reset" type="submit" name="submit" value="Send me reset instructions">
         </form>
     </div>

@@ -24,7 +24,7 @@ if ($user == null) {
         <input type="hidden" id="login" name="login" value="<?=$login?>"/>
         <input type="hidden" id="email" name="email" value="<?=$email?>"/>
         <input type="hidden" id="token" name="token" value="<?=$token?>"/>
-        Password : <input type="password" id="passwd" name="passwd" autocomplete="off" value=""/>
+        Password : <input type="password" id="passwd" name="passwd" autocomplete="off" autofocus="autofocus" value=""/>
         <br/>
         Confirm Password : <input type="password" id="passwd_confirm" name="passwd_confirm" autocomplete="off" value=""/>
         <br/>

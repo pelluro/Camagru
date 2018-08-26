@@ -26,13 +26,6 @@ function print_array($array)
     }
 }
 
-function isLoggedIn()
-{
-    if(isset($_SESSION["currentUser"]))
-        return TRUE;
-    return FALSE;
-}
-
 function registerMessageHeader($message,$category)
 {
 	$_SESSION['uniquemessage'] = $message;

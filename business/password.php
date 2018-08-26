@@ -4,9 +4,9 @@ require_once("../model/DBConnector.php");
 require_once("../config/database.php");
 require_once("../functions/functions.php");
 
-if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd_confirm']) || !isset($_POST['passwd']) || !isset($_POST['token']))
+if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd_confirm']) || !isset($_POST['passwd']) || !isset($_POST['token']) || strlen($_POST["passwd"] )== 0)
 {
-    registerMessageHeader("no password provided", "danger");
+    registerMessageHeader("No password provided", "danger");
     header('location: ../password_forgotten.php');
 }
 $email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8");

@@ -3,6 +3,10 @@ require_once("./model/DBConnector.php");
 session_start();
 require_once("./config/database.php");
 require_once("./functions/functions.php");
+if(isset($requireLogin) && $requireLogin == TRUE && !isLoggedIn())
+{
+    header("location: index.php");
+}
 ?>
 <html>
 <head>
@@ -33,7 +37,7 @@ require_once("./functions/functions.php");
                     else
                     {
                         ?>
-                        <li><a href="#">[<?=$_SESSION["currentUser"]?>]</a></li>
+                        <li><a href="./account.php">[<?=$_SESSION["currentUser_login"]?>]</a></li>
                         <li><a href="./logout.php">Sign out</a></li>
                         <?php
                     }
