@@ -23,6 +23,13 @@ $comment->pic_id = $pic_id;
 $comment->date =date("Y-m-j H:i:s");
 $comment->content = $content;
 $dbConnector->saveComment($comment);
+$picture = $dbConnector->getPicture($pic_id);
+$owner = $dbConnector->getUserByID($picture->user_id);
+$paramOwnerNotifOnComment = $dbConnector->getParamUser($owner->getID(),NOTIF_COMMENT_MYPIC);
+if($paramOwnerNotifOnComment == null || $paramOwnerNotifOnComment->param_value)
+{
+    mailnotif($owner,$picture,$user);
+}
 registerMessageHeader("OK.", "success");
 header("location: ../photos.php?id=$pic_id");
 ?>

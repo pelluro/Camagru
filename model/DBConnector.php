@@ -52,6 +52,15 @@ class DBConnector
         return $users;
     }
 
+    function getUserByID($user_id)
+    {
+        $req = "SELECT * FROM users WHERE ID=$user_id";
+        $row = $this->execQuerySelect($req);
+        if ($row == null)
+            return null;
+        return new User($row[0]);
+    }
+
     function getUser($login, $password)
     {
         $password = hash('whirlpool', $password);
@@ -90,6 +99,20 @@ class DBConnector
         foreach ($data as $row) {
             $user = new User($row);
             $users[] = $user;
+        }
+        return $users;
+    }
+
+    function getUsersFromCommentsOfPicture($pic_id)
+    {
+        $req = "SELECT users.* FROM users JOIN comments ON users.id = comments.user_id WHERE comments.pic_id=$pic_id";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return null;
+        $users = array();
+        foreach ($data as $row) {
+            $user = new User($row);
+            $users[$user->getID()] = $user;
         }
         return $users;
     }

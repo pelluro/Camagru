@@ -22,7 +22,10 @@ TO DO LIST
   - Paginer.
   - Navigation entre les photos
   - possibilité de liker les photos.
-  - possibiliteé de commenter les photos. 
+  - possibilité de commenter les photos.
+    - editer son commentaire
+    - supprimer son commentaire
+    - supprimer les commentaires des autres si c'est notre photo 
     - envoyer un mail au proprio quand une image recois un nouveau commentaire.
 
 - CSS

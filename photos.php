@@ -25,22 +25,30 @@ else {
     </div>
     <?php
     $comments=$dbConnector->getCommentsByPicture($picture->getID());
+    $usersByID = $dbConnector->getUsersFromCommentsOfPicture($picture->getID());
     ?>
     <div class="panel panel-primary">
         <div class="panel-heading">Comments</div>
         <div class="panel-body">
+            <table class="table">
+                <tr><th width="20%">Who</th><th width="80%">Comment</th></tr>
             <?php
             if ($comments != null)
             {
                 foreach ($comments as $comment)
                 {
-                    echo "{$comment->content}<br/>";
+                    ?>
+                    <tr><td><div><b><?=$usersByID[$comment->user_id]->login?></b></div><div><i><?=$comment->date?></i></div></td><td><?=$comment->content?></td></tr>
+                    <?php
                 }
             }
+            ?>
+            </table>
+            <?php
             if (isLoggedIn())
             {?>
                 <form id="form" action="business/comments.php" method="POST">
-                     <input type="text" id="" name="comment" autocomplete="off" value="" autofocus="autofocus" placeholder="enter your comment here"/>
+                    <input type="text" id="" size="60" name="comment" autocomplete="off" value="" autofocus="autofocus" placeholder="Comment here !"/>
                     <input type="hidden" name="pic_id" value="<?=$picture->getID();?>"/>
                     <input id="reset" type="submit" name="submit" value="Submit">
                 </form>
