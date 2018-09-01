@@ -116,6 +116,19 @@ class DBConnector
         }
         return $users;
     }
+    function getUsersFromLikesOfPicture($pic_id)
+    {
+        $req = "SELECT users.* FROM users JOIN likes on users.id = likes.user_id WHERE likes.pic_id=$pic_id";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return null;
+        $users = array();
+        foreach ($data as $row) {
+            $user = new User($row);
+            $users[$user->getID()] = $user;
+        }
+        return $users;
+    }
 
     function saveUser($user)
     {
@@ -166,6 +179,21 @@ class DBConnector
             return null;
         return $this->execQuery($req);
     }
+
+    function getLikesFromPictureId($pic_id)
+    {
+        $req = "SELECT * FROM likes WHERE pic_id=$pic_id";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return null;
+        $likes = array();
+        foreach ($data as $row) {
+            $like = new Like($row);
+            $likes[] = $like;
+        }
+        return $likes;
+    }
+
     function getPictures()
     {
         $data = $this->execQuerySelect("SELECT * FROM pictures ORDER BY filedate");

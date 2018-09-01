@@ -16,11 +16,26 @@ if($picture==null)
     <?php
 }
 else {
+    $likes = $dbConnector->getLikesFromPictureId($picture->getID());
+
     ?>
     <div class="panel panel-primary">
         <div class="panel-heading"><?=$picture->filename?></div>
         <div class="panel-body" align="center">
-                <img src="./img/<?= $picture->filename?>"/>
+                <div class="col-xs-12"><img src="./img/<?= $picture->filename?>"/></div>
+                <div class="col-xs-12">
+                    <?php
+                    $first = 1;
+                    $hasLiked = 0;
+                    $isLoggedIn = isLoggedIn();
+                    foreach ($likes as $like)
+                        if(!$first)
+                            echo ", ";
+
+                        if($first)
+                            $first = 0;
+                    ?>
+                </div>
         </div>
     </div>
     <?php

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: pellu
- * Date: 8/26/2018
- * Time: 12:04 PM
- */
 
 class Like extends Entity
 {

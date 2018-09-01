@@ -17,7 +17,7 @@ $pictures=$dbConnector->getPictures();
             foreach ($pictures as $picture) {
                 ?>
                 <a id="pic_<?=$count?>" href="photos.php?id=<?=$picture->getID();?>" <?php if($count++>=5) echo "style='display: none;'";?>>
-                <img src="./img/<?= $picture->filename ?>" width="80" height="80"/>
+                <img src="./img/<?= $picture->filename ?>" width="120" height="120"/>
                 </a>
                 <?php
             }?>
@@ -31,7 +31,7 @@ $pictures=$dbConnector->getPictures();
 <script type="text/javascript">
     function Previous() {
         var currentPage = parseInt(document.getElementById("currentPage").innerHTML);
-        if(currentPage > 0)
+        if(currentPage > 1)
         {
             for (var i = (currentPage - 1) * 5; i < currentPage * 5; i++)
             {
