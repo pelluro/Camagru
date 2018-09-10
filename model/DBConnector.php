@@ -175,9 +175,24 @@ class DBConnector
         $id = $like->getID();
         if ($id == 0) {
             $req = "INSERT INTO likes (user_id, pic_id) VALUES ('{$like->user_id}','{$like->pic_id}')";
-        } else
-            return null;
+            return $this->execQuery($req);
+        }
+        return null;
+    }
+
+    function deleteLike($pic_id,$user_id)
+    {
+        $req = "DELETE FROM likes WHERE pic_id = $pic_id AND user_id = $user_id";
         return $this->execQuery($req);
+    }
+
+    function hasLiked($pic_id,$user_id)
+    {
+        $req = "SELECT * FROM likes WHERE pic_id=$pic_id AND user_id = $user_id";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return FALSE;
+        return TRUE;
     }
 
     function getLikesFromPictureId($pic_id)
@@ -254,7 +269,7 @@ class DBConnector
     {
         $paramUser2 = $this->getParamUser($paramUser->user_id, $paramUser->param_name);
         if ($paramUser2 == null) {
-            $req = "INSERT INTO paramusers (user_id, param_name, param_value) VALUES ({$paramUser2->user_id},'{$paramUser2->param_name}','{ $paramUser2->param_value}')";
+            $req = "INSERT INTO paramusers (user_id, param_name, param_value) VALUES ({$paramUser->user_id},'{$paramUser->param_name}','{$paramUser->param_value}')";
         } else {
             $req = "UPDATE paramusers SET param_value='{$paramUser->param_value}' WHERE user_id={$paramUser->user_id} AND param_name='{$paramUser->param_name}'";
         }

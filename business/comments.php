@@ -3,7 +3,7 @@ require_once("../model/DBConnector.php");
 session_start();
 require_once("../config/database.php");
 require_once("../functions/functions.php");
-print_array($_POST);
+
 if( !isset($_POST['comment']) || strlen($_POST["comment"])==0)
 {
     registerMessageHeader("Empty Comment.", "danger");
