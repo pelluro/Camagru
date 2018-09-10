@@ -159,6 +159,15 @@ class DBConnector
         return $comments;
     }
 
+    function getCommentsById($comment_id)
+    {
+        $req = "SELECT * FROM comments WHERE id=$comment_id";
+        $data = $this->execQuerySelect($req);
+        if ($data == null)
+            return null;
+        return $data[0];
+    }
+
     function saveComment($comment)
     {
         $id = $comment->getID();
@@ -167,6 +176,12 @@ class DBConnector
         } else {
             $req = "UPDATE comments SET content='{$comment->content}' WHERE id=$id ";
         }
+        return $this->execQuery($req);
+    }
+
+    function deleteComment($comment_id)
+    {
+        $req = "DELETE FROM comments WHERE id = $comment_id";
         return $this->execQuery($req);
     }
 

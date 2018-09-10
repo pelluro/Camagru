@@ -87,20 +87,45 @@ else {
     <div class="panel panel-primary">
         <div class="panel-heading">Comments</div>
         <div class="panel-body">
-            <table class="table">
-                <tr><th width="20%">Who</th><th width="80%">Comment</th></tr>
-                <?php
-                if ($comments != null)
-                {
-                    foreach ($comments as $comment)
+            <form id="formDeleteComment" action="business/comments.php" method="POST">
+                <input type="hidden" name="action" value="delete"/>
+                <input type="hidden" name="pic_id" value="<?=$picture->getID();?>"/>
+                <input type="hidden" name="comment_id" value="0"/>
+            </form>
+                <table class="table">
+                    <tr><th width="10%">Action</th><th width="20%">Who</th><th width="70%">Comment</th></tr>
+                    <?php
+                    if ($comments != null)
                     {
-                        ?>
-                        <tr><td><div><b><?=$usersByID[$comment->user_id]->login?></b></div><div><i><?=$comment->date?></i></div></td><td><?=$comment->content?></td></tr>
-                        <?php
+                        foreach ($comments as $comment)
+                        {
+                            ?>
+                            <tr>
+                                <td>
+                                    <?php
+                                    if($userConnect != null && ($comment->user_id == $userConnect->getID() || $picture->user_id == $userConnect->getID()))
+                                    {
+                                        ?>
+                                        <button type="button" class="btn btn-sm btn-default" onclick="DeleteComment('<?=$comment->getID()?>');">X</button>
+                                        <?php
+                                    }
+                                    ?>
+                                </td>
+                                <td>
+                                    <div><b><?=$usersByID[$comment->user_id]->login?></b></div>
+                                    <div><i><?=$comment->date?></i></div>
+                                </td>
+                                <td>
+                                    <?=$comment->content?>
+                                </td>
+                            </tr>
+                            <?php
+                        }
                     }
-                }
-                ?>
-            </table>
+                    ?>
+                </table>
+
+
             <?php
             if ($userConnect != null)
             {
@@ -108,6 +133,7 @@ else {
                 <form id="formComment" action="business/comments.php" method="POST">
                     <input type="text" id="" size="60" name="comment" autocomplete="off" value="" autofocus="autofocus" placeholder="Comment here !"/>
                     <input type="hidden" name="pic_id" value="<?=$picture->getID();?>"/>
+                    <input type="hidden" name="action" value="insert"/>
                     <input id="reset" type="submit" name="submit" value="Submit">
                 </form>
                 <?php
@@ -119,3 +145,9 @@ else {
 }
 include('./views/footer.php');
 ?>
+<script type="text/javascript">
+    function DeleteComment(commentID) {
+        document.getElementsByName("comment_id")[0].setAttribute('value',commentID);
+        //document.getElementById("formDeleteComment").submit();
+    }
+</script>
