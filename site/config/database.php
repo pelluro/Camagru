@@ -11,4 +11,3 @@ try {
 } catch (PDOException $ex) {
     die('Échec lors de la connexion : ' . $ex->getMessage());
 }
-

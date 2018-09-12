@@ -21,3 +21,4 @@ $paramUserNOTIF_COMMENT_MYPIC->param_value=$newValue?1:0;
 $dbConnector->saveParamUser($paramUserNOTIF_COMMENT_MYPIC);
 registerMessageHeader("OK.", "successw");
 header('location: ../account.php');
+exit;

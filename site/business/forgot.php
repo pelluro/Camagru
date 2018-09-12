@@ -24,4 +24,4 @@ $dbConnector->saveUser($user);
 registerMessageHeader("An email has been sent to $email, please check for changing password.","warning");
 mail_password($user);
 header('location: ../index.php');
-?>
+exit;

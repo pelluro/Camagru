@@ -29,4 +29,3 @@ function getConnectedUser($dbConnector)
     $token = $_SESSION["currentUser_token"];
     return $dbConnector->getUserByEmailAndLoginAndToken($email,$login,$token);
 }
-?>

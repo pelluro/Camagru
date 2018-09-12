@@ -10,8 +10,7 @@ function mail_confirmation($user)
     $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
     $headers .= 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $message = '
-  <html>
+    $message = '<html>
     <head>
       <title>' . $subject . '</title>
     </head>
@@ -21,9 +20,15 @@ function mail_confirmation($user)
       <a href="http://localhost:8100/Camagru/confirmation.php?login='.$login.'&confirmation_code='.$guid.'">Verify my email</a>
     </body>
   </html>
-  ';?>
-    <?php
-    var_dump(mail($email, $subject, $message, $headers));
+  ';
+	try
+	{
+		mail($email, $subject, $message, $headers);
+	}
+	catch(Exception $e)
+	{
+		// RIEN ON VERRA
+	}
 }
 
 function mail_password($user)
@@ -49,9 +54,15 @@ function mail_password($user)
                 <p>Your password will not change until you access the link above and create a new one</p>
             </body>
      </html>
-    ';?>
-    <?php
-    var_dump(mail($email, $subject, $message, $headers));
+    ';
+	try
+	{
+		mail($email, $subject, $message, $headers);
+	}
+	catch(Exception $e)
+	{
+		// RIEN ON VERRA
+	}
 }
 
 function mailnotif($user,$picture,$userfrom)
@@ -75,7 +86,13 @@ function mailnotif($user,$picture,$userfrom)
       <a href='http://localhost:8100/Camagru/photos.php?id=".$picture->getID()."'>Check yourself!</a>
     </body>
   </html>
-  ";?>
-    <?php
-    var_dump(mail($email, $subject, $message, $headers));
+  ";
+	try
+	{
+		mail($email, $subject, $message, $headers);
+	}
+	catch(Exception $e)
+	{
+		// RIEN ON VERRA
+	}
 }

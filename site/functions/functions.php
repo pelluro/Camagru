@@ -63,6 +63,3 @@ function getGUID(){
         return $uuid;
     }
 }
-
-?>
-

@@ -31,4 +31,3 @@ $req = 'CREATE DATABASE IF NOT EXISTS camagru;
                                             FOREIGN KEY (user_id) REFERENCES users(id),
                                             PRIMARY KEY (user_id, param_name))';
 $dbConnection->prepare($req)->execute();
-?>

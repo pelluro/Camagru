@@ -64,10 +64,11 @@ else if($_POST['action'] == 'delete')
         echo "<br/>USERIDPIC = ".$relatedPicture->user_id ;
 
         registerMessageHeader("Unauthorized.", "danger");
-        //header('location: ../photos.php?id='.$_POST['pic_id']);
+        header('location: ../photos.php?id='.$_POST['pic_id']);
+		exit;
     }
     $dbConnector->deleteComment($commentToDelete->getID());
 }
 registerMessageHeader("OK.", "success");
-//header("location: ../photos.php?id=$pic_id");
-?>
+header("location: ../photos.php?id=$pic_id");
+exit;

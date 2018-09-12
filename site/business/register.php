@@ -40,7 +40,7 @@ else
 		{
 			registerMessageHeader(" <p>Thank You For Registering!</p> <p>An email has been sent to this address: <b>$email</b>.</p><p>Please click on the link you received to confirm your account.</p>","success");
 			mail_confirmation($user);
-			header( "location: ../index.php");
+			header('location: ../index.php');
 			exit;
 		}
 		else
@@ -51,4 +51,3 @@ else
 	}
 	$query->closeCursor();
 }
-?>

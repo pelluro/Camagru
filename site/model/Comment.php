@@ -18,5 +18,4 @@ class Comment extends Entity
             $this->date=$row["date"];
         }
     }
-
 }

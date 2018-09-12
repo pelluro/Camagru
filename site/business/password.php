@@ -31,3 +31,4 @@ $user->verified=1;
 $dbConnector->saveUser($user);
 registerMessageHeader("Password changed ok.","success");
 header('location: ../index.php');
+exit;
