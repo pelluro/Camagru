@@ -31,7 +31,7 @@ if ($user == null) {
         <input id="reset" type="submit" name="submit" value="Sign In" style="...">
     </form>
     <br/>
-    <a href="./password_forgotten.php"> Forgot Password ?</a>
+    <a href="password_forgotten.php"> Forgot Password ?</a>
 	</div>
 </div>
 <?php
