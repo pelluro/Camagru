@@ -1,12 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f740398-5626-4657-b92d-fd38f77b2ac0" name="Default" comment="&#10;&#10;knmn">
-      <change afterPath="$PROJECT_DIR$/business/like.php" afterDir="false" />
+    <list default="true" id="6f740398-5626-4657-b92d-fd38f77b2ac0" name="Default" comment="Likes">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/config/login_ecole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/config/login_ecole_setup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/css/new.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Camagru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Camagru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/business/comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/DBConnector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/forgot.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/forgot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/like.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/parameters.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/parameters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/password.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/business/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database_setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/database_setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_ecole.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_docker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_ecole_setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_docker_setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_nas.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_nas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_nas_setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_nas_setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_surface.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_surface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/login_surface_setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/login_surface_setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/css/categories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/new.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/functions/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/functions/functions_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions_mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/functions/functions_mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Peony.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/Peony.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/aigle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/aigle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/baleine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/baleine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bgheader.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/bgheader.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/totoro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/totoro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/trounoir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/img/trounoir.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/DBConnector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/Entity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Like.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/Like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ParamUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/ParamUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/Picture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_forgotten.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/password_forgotten.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/password_reset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/approuve.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/temp/approuve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +98,13 @@
         <item name="Localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="comments: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="likes: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
@@ -72,23 +131,48 @@
     </expand>
     <select />
   </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="bash" />
+      <option name="imageId" value="mysql:5.5" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="ls" />
+      <option name="imageId" value="mysql:5.5" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="bash" />
+      <option name="imageId" value="camagru_site" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="netstat -a" />
+      <option name="imageId" value="camagru_site" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="ps -aux" />
+      <option name="imageId" value="camagru_site" />
+    </ExecCommand>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1474165505">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="DockerFile" value="1" />
           <entry key="auteur" value="1" />
           <entry key="comments" value="2" />
           <entry key="css" value="1" />
@@ -97,10 +181,11 @@
           <entry key="likes" value="1" />
           <entry key="md" value="3" />
           <entry key="paramusers" value="5" />
-          <entry key="php" value="172" />
+          <entry key="php" value="185" />
           <entry key="pictures" value="4" />
           <entry key="sql" value="1" />
           <entry key="users" value="8" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -110,28 +195,33 @@
           <entry key="Enforced Plain Text" value="3" />
           <entry key="Git file" value="1" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="169" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="182" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="1" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Dockerfile" value="10" />
           <entry key="cell" value="187" />
           <entry key="md" value="168" />
-          <entry key="php" value="12213" />
+          <entry key="php" value="13560" />
           <entry key="sql" value="4" />
-          <entry key="txt" value="459" />
+          <entry key="txt" value="464" />
+          <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Dockerfile" value="10" />
           <entry key="Enforced Plain Text" value="1" />
           <entry key="Markdown" value="168" />
-          <entry key="PHP" value="12205" />
-          <entry key="PLAIN_TEXT" value="459" />
+          <entry key="PHP" value="13552" />
+          <entry key="PLAIN_TEXT" value="464" />
           <entry key="SQL" value="11" />
           <entry key="Scratch" value="187" />
+          <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -147,91 +237,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery.php">
+        <entry file="file://$PROJECT_DIR$/site/config/login_docker_setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/like.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="23">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photos.php">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="529">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/User.php">
+        <entry file="file://$PROJECT_DIR$/site/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
-              <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+            <state relative-caret-position="23">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Like.php">
+        <entry file="file://$PROJECT_DIR$/site/config/setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="269">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/likes">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/site/config/database_setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Entity.php">
+        <entry file="file://$PROJECT_DIR$/site/config/login_docker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/DBConnector.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="184" column="49" selection-start-line="184" selection-start-column="49" selection-end-line="184" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/functions_login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="23">
+              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -249,6 +303,7 @@
     <findStrings>
       <find>produit.php</find>
       <find>$_SESSION[&quot;currentUser&quot;] =</find>
+      <find>comment_id</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -264,14 +319,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/galery.php" />
-        <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/registrer.php" />
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/formlogin.php" />
-        <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/connexion.php" />
-        <option value="$PROJECT_DIR$/first_connect.php" />
         <option value="$PROJECT_DIR$/forgot.php" />
         <option value="$PROJECT_DIR$/forgot_pass.php" />
         <option value="$PROJECT_DIR$/error_connexion.php" />
@@ -311,10 +358,18 @@
         <option value="$PROJECT_DIR$/functions/functions_mail.php" />
         <option value="$PROJECT_DIR$/model/Like.php" />
         <option value="$PROJECT_DIR$/gallery.php" />
-        <option value="$PROJECT_DIR$/business/comments.php" />
-        <option value="$PROJECT_DIR$/model/DBConnector.php" />
         <option value="$PROJECT_DIR$/business/like.php" />
+        <option value="$PROJECT_DIR$/model/DBConnector.php" />
+        <option value="$PROJECT_DIR$/business/comments.php" />
         <option value="$PROJECT_DIR$/photos.php" />
+        <option value="$PROJECT_DIR$/DockerFile" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/site/config/database_setup.php" />
+        <option value="$PROJECT_DIR$/site/config/login_docker_setup.php" />
+        <option value="$PROJECT_DIR$/site/config/database.php" />
+        <option value="$PROJECT_DIR$/site/config/login_docker.php" />
+        <option value="$PROJECT_DIR$/site/config/setup.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -327,9 +382,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-52" />
-    <option name="y" value="-52" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="y" value="20" />
     <option name="width" value="2766" />
     <option name="height" value="1854" />
   </component>
@@ -341,7 +396,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,57 +405,39 @@
             </path>
             <path>
               <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/Pelluro/Camagru/gallery.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Pelluro\Camagru\model" />
-      <recent name="C:\xampp\htdocs\Pelluro\Camagru\temp" />
-      <recent name="C:\xampp\htdocs\Pelluro\Camagru\views" />
-      <recent name="C:\xampp\htdocs\Pelluro\Camagru\config" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Pelluro\Camagru\img" />
       <recent name="C:\xampp\htdocs\Pelluro\Camagru\business" />
       <recent name="C:\xampp\htdocs\Pelluro\Camagru" />
       <recent name="C:\xampp\htdocs\Pelluro\Camagru\config" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Pelluro\Camagru\site" />
+      <recent name="C:\xampp\htdocs\Pelluro\Camagru\model" />
+      <recent name="C:\xampp\htdocs\Pelluro\Camagru\temp" />
+      <recent name="C:\xampp\htdocs\Pelluro\Camagru\views" />
+      <recent name="C:\xampp\htdocs\Pelluro\Camagru\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,6 +451,53 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="startBrowserSettings">
+            <browser url="http://127.0.0.1" />
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="JSONFilePath" value="" />
+          <option name="command" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="startBrowserSettings">
+            <browser url="http://127.0.0.1" />
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="JSONFilePath" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="sourceFilePath" value="" />
+          <option name="startBrowserSettings">
+            <browser url="http://127.0.0.1" />
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -452,7 +535,10 @@
       <workItem from="1535519317765" duration="963000" />
       <workItem from="1535531784505" duration="2496000" />
       <workItem from="1535796901223" duration="2650000" />
-      <workItem from="1536587661670" duration="5201000" />
+      <workItem from="1536587661670" duration="7859000" />
+      <workItem from="1536780482571" duration="273000" />
+      <workItem from="1536781631431" duration="2508000" />
+      <workItem from="1536784203685" duration="940000" />
     </task>
     <task id="LOCAL-00001" summary="organisation du code. Header et footer ok">
       <created>1533759043724</created>
@@ -580,11 +666,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535830622051</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Likes">
+      <created>1536614653338</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536614653338</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122235000" />
+    <option name="totallyTimeSpent" value="128614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,14 +689,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-26" y="-26" width="1383" height="927" extended-state="0" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50121063" side_tool="true" weight="0.10649547" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49878934" visible="true" weight="0.1826415" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49878934" visible="true" weight="0.1919879" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" />
+      <window_info anchor="bottom" id="Docker" order="1" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32985657" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.1779661" />
@@ -616,7 +709,7 @@
       <window_info anchor="bottom" id="TODO" order="11" weight="0.08344198" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32985657" />
       <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.32985657" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.20528302" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.20559335" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -669,27 +762,16 @@
     <MESSAGE value="on peut poster des commentaires sur chaque image !" />
     <MESSAGE value="ajout un bout Java pour la pagination et 5img par page trop la classe le javascript!" />
     <MESSAGE value="&#10;&#10;knmn" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;&#10;knmn" />
+    <MESSAGE value="Likes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Likes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auteur">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/mysql_logins.php" />
-    <entry file="file://$PROJECT_DIR$/functions/mysql_loginsnas.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e34397ab-8e70-4b59-baba-dd053bb6cd35/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/connection_install.php" />
     <entry file="file://$PROJECT_DIR$/functions/connection.php" />
-    <entry file="file://$PROJECT_DIR$/config/login_ecole.php">
+    <entry file="file://$PROJECT_DIR$/site/config/login_ecole.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/approuve.php">
+    <entry file="file://$PROJECT_DIR$/site/temp/approuve.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
@@ -704,79 +786,66 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Pictures.java" />
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/site/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="118" selection-start-line="14" selection-start-column="118" selection-end-line="14" selection-end-column="118" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/forgot.php">
+    <entry file="file://$PROJECT_DIR$/site/business/forgot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" selection-start-line="1" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/login.php">
+    <entry file="file://$PROJECT_DIR$/site/business/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Picture.php">
+    <entry file="file://$PROJECT_DIR$/site/model/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirmation.php">
+    <entry file="file://$PROJECT_DIR$/site/confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.php">
+    <entry file="file://$PROJECT_DIR$/site/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/password.php">
+    <entry file="file://$PROJECT_DIR$/site/business/password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="177" selection-start-line="6" selection-start-column="177" selection-end-line="6" selection-end-column="177" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/login_surface.php">
+    <entry file="file://$PROJECT_DIR$/site/config/login_ecole_setup.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/login_surface_setup.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/login_ecole_setup.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ParamUser.php">
+    <entry file="file://$PROJECT_DIR$/site/model/ParamUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/parameters.php">
+    <entry file="file://$PROJECT_DIR$/site/business/parameters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="60" selection-start-line="12" selection-end-line="14" selection-end-column="60" />
@@ -797,63 +866,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
+    <entry file="file://$PROJECT_DIR$/site/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/register.php">
+    <entry file="file://$PROJECT_DIR$/site/business/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/functions.php">
+    <entry file="file://$PROJECT_DIR$/site/functions/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/functions_mail.php">
+    <entry file="file://$PROJECT_DIR$/site/functions/functions_mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1702">
           <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/account.php">
+    <entry file="file://$PROJECT_DIR$/site/business/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
+    <entry file="file://$PROJECT_DIR$/site/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Comment.php">
+    <entry file="file://$PROJECT_DIR$/site/model/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
@@ -870,31 +939,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/password_forgotten.php">
+    <entry file="file://$PROJECT_DIR$/site/password_forgotten.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/password_reset.php">
+    <entry file="file://$PROJECT_DIR$/site/password_reset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database_setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -912,31 +967,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/functions_login.php">
+    <entry file="file://$PROJECT_DIR$/site/gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="1196">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
+    <entry file="file://$PROJECT_DIR$/site/business/like.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/business/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="989">
           <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Entity.php">
+    <entry file="file://$PROJECT_DIR$/site/model/Like.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="345">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -947,38 +1009,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/comments.php">
+    <entry file="file://$PROJECT_DIR$/site/model/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="322">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/DBConnector.php">
+    <entry file="file://$PROJECT_DIR$/site/model/DBConnector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="184" column="49" selection-start-line="184" selection-start-column="49" selection-end-line="184" selection-end-column="49" />
+        <state relative-caret-position="3680">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Like.php">
+    <entry file="file://$PROJECT_DIR$/site/functions/functions_login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="529">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/like.php">
+    <entry file="file://$PROJECT_DIR$/site/photos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        <state relative-caret-position="292">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos.php">
+    <entry file="file://$PROJECT_DIR$/site/config/login_surface_setup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="46">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/login_surface.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/database_setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/login_docker_setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/login_docker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>

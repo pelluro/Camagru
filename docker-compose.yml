@@ -1,0 +1,28 @@
+site:
+  build: .
+  ports :
+  - "9080:80"
+  volumes:
+  - ./site:/var/www/html/
+  links:
+  - database
+php-myadmin:
+    image: corbinu/docker-phpmyadmin
+    ports:
+    - "8080:80"
+    environment:
+    - MYSQL_USERNAME=root
+    - MYSQL_PASSWORD=root
+    links:
+    - database:mysql
+database:
+    image: mysql:5.5
+    ports:
+    - "3333:3306"
+    environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=myDB
+    - MYSQL_USER=pelluro
+    - MYSQL_PASSWORD=pelluro
+    volumes:
+    - ./mysqldata:/var/lib/mysql
