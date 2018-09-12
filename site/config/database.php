@@ -9,5 +9,6 @@ try {
     $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbConnector = new DBConnector($dbConnection);
 } catch (PDOException $ex) {
-    die('Échec lors de la connexion : ' . $ex->getMessage());
+    print_array($dbConnection->errorInfo());
+    die('Échec lors de la connexion : ' . $ex->getTraceAsString());
 }

@@ -18,7 +18,13 @@ class DBConnector
     function execQuerySelect($req)
     {
         $query = $this->dbConnection->prepare($req);
-        $query->execute();
+        try {
+            $query->execute();
+        }
+        catch (Exception $ex)
+        {
+           return null;
+        }
         if ($query->rowCount() == 0)
             return null;
         $result = array();

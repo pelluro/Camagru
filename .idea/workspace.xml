@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6f740398-5626-4657-b92d-fd38f77b2ac0" name="Default" comment="Docker !">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/camagru/db.opt" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/camagru/db.opt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/columns_priv.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/columns_priv.MYD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/columns_priv.MYI" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/columns_priv.MYI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/db.MYI" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/db.MYI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/procs_priv.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/procs_priv.MYD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/procs_priv.MYI" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/procs_priv.MYI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/tables_priv.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/tables_priv.MYD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldata/mysql/tables_priv.MYI" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldata/mysql/tables_priv.MYI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/model/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/model/DBConnector.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,50 +36,22 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="camagru@0.0.0.0" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="camagru@0.0.0.0" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="camagru@0.0.0.0" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="comments: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="likes: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="paramusers: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="pictures: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="camagru@0.0.0.0" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="camagru: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
@@ -176,6 +159,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1453248647">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="md" value="1" />
+          <entry key="php" value="5" />
+          <entry key="pictures" value="1" />
+          <entry key="sql" value="1" />
+          <entry key="users" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="2" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="5" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="102" />
+          <entry key="php" value="68" />
+          <entry key="txt" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="68" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Scratch" value="102" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Camagru" />
@@ -183,64 +205,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/config/login_docker_setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/views/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/business/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site/model/DBConnector.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/config/setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="253">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -255,10 +223,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/config/login_docker.php">
+        <entry file="file://$PROJECT_DIR$/site/business/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+            <state relative-caret-position="391">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b4da6372-8af8-4cf3-8683-a1ec310eea4a/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="626">
+                <caret line="38" selection-start-line="38" selection-end-line="38" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b4da6372-8af8-4cf3-8683-a1ec310eea4a/schema/camagru/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://b4da6372-8af8-4cf3-8683-a1ec310eea4a/schema/camagru/table/pictures">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/model/DBConnector.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1949">
+              <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -338,10 +350,10 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/site/config/database_setup.php" />
         <option value="$PROJECT_DIR$/site/config/login_docker_setup.php" />
-        <option value="$PROJECT_DIR$/site/config/database.php" />
         <option value="$PROJECT_DIR$/site/config/login_docker.php" />
         <option value="$PROJECT_DIR$/site/config/setup.php" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/site/config/database.php" />
         <option value="$PROJECT_DIR$/site/model/DBConnector.php" />
       </list>
     </option>
@@ -391,7 +403,19 @@
               <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
               <item name="Camagru" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
@@ -405,7 +429,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/Pelluro/Camagru/gallery.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -530,6 +554,7 @@
       <workItem from="1536781631431" duration="2508000" />
       <workItem from="1536784203685" duration="1392000" />
       <workItem from="1536785850198" duration="816000" />
+      <workItem from="1536788613074" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="organisation du code. Header et footer ok">
       <created>1533759043724</created>
@@ -675,7 +700,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129882000" />
+    <option name="totallyTimeSpent" value="131145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,7 +716,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50121063" side_tool="true" weight="0.10649547" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49878934" visible="true" weight="0.19501133" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49878934" visible="true" weight="0.17006803" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" weight="0.32972974" />
@@ -707,7 +732,7 @@
       <window_info anchor="bottom" id="TODO" order="11" weight="0.08344198" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32985657" />
       <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.32972974" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.20559335" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.24640967" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -765,11 +790,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Docker !" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions/connection_install.php" />
-    <entry file="file://$PROJECT_DIR$/functions/connection.php" />
-    <entry file="file://$PROJECT_DIR$/site/config/login_ecole.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/temp/approuve.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -844,20 +864,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/comments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/pictures">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/comments" />
+    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/pictures" />
     <entry file="file://$PROJECT_DIR$/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -876,13 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/functions/functions_mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1702">
-          <caret line="74" column="89" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -914,16 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="874">
-            <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/password_forgotten.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -938,20 +929,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/paramusers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/paramusers" />
+    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/users" />
     <entry file="file://$PROJECT_DIR$/site/gallery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
@@ -987,13 +966,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/likes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://e34397ab-8e70-4b59-baba-dd053bb6cd35/schema/camagru/table/likes" />
     <entry file="file://$PROJECT_DIR$/site/model/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1046,24 +1019,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/config/database.php">
+    <entry file="file://$PROJECT_DIR$/site/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="391">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/functions/functions_mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="74" column="57" lean-forward="true" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/config/setup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="628">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/config/database_setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1074,24 +1047,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/header.php">
+    <entry file="file://$PROJECT_DIR$/site/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/business/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        <state relative-caret-position="253">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/model/DBConnector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="1949">
+          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/config/database_setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/business/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b4da6372-8af8-4cf3-8683-a1ec310eea4a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="626">
+            <caret line="38" selection-start-line="38" selection-end-line="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b4da6372-8af8-4cf3-8683-a1ec310eea4a/schema/camagru/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b4da6372-8af8-4cf3-8683-a1ec310eea4a/schema/camagru/table/pictures">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
