@@ -19,10 +19,7 @@ TO DO LIST
         - possibilité de supprimer ses propres images pas les autres.
 
 - GALERIE
-  - Paginer.
   - Navigation entre les photos
-  - possibilité de liker les photos.
-  - possibilité de commenter les photos.
     - editer son commentaire
     - supprimer son commentaire
     - supprimer les commentaires des autres si c'est notre photo 
