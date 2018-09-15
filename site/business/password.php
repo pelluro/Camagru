@@ -1,8 +1,5 @@
-    <?php
-require_once("../model/DBConnector.php");
-    session_start();
-require_once("../config/database.php");
-require_once("../functions/functions.php");
+<?php
+include "include.php";
 
 if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd_confirm']) || !isset($_POST['passwd']) || !isset($_POST['token']) || strlen($_POST["passwd"] )== 0)
 {

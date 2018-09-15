@@ -1,9 +1,5 @@
 <?php
-require_once("../model/DBConnector.php");
-session_start();
-require_once("../config/database.php");
-require_once("../functions/functions.php");
-
+include "include.php";
 if(!isset($_POST['email']))
     {
         registerMessageHeader("no email provided", "danger");

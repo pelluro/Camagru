@@ -1,8 +1,5 @@
 <?php
-require_once("../model/DBConnector.php");
-session_start();
-require_once("../config/database.php");
-require_once("../functions/functions.php");
+include "include.php";
 
 if( !isset($_POST['user_id']) || !isset($_POST['likeNewValue']))
 {
@@ -21,12 +18,6 @@ if($likeNewValue == 1)
         $like->user_id = $user_id;
         $dbConnector->saveLike($like);
         registerMessageHeader("Liked.", "success");
-        header('location: ../photos.php?id='.$_POST['pic_id']);
-    }
-    else
-    {
-        registerMessageHeader("Already liked.", "warning");
-        header('location: ../photos.php?id='.$_POST['pic_id']);
     }
 }
 else
@@ -34,10 +25,6 @@ else
     if($dbConnector->hasLiked($pic_id,$user_id)) {
         $dbConnector->deleteLike($pic_id, $user_id);
         registerMessageHeader("Unliked.", "success");
-        header('location: ../photos.php?id='.$_POST['pic_id']);
-    }
-    else {
-        registerMessageHeader("Was not liked already.", "warning");
-        header('location: ../photos.php?id='.$_POST['pic_id']);
     }
 }
+header('location: ../photos.php?id='.$_POST['pic_id']);
