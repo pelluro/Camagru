@@ -1,0 +1,7 @@
+.selectedimg { 
+   border:2px solid #22DD22;
+}
+
+.imgSupp {
+	cursor: pointer;
+}

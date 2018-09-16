@@ -11,6 +11,7 @@ if(isset($requireLogin) && $requireLogin == TRUE && !isLoggedIn())
 <html>
 <head>
     <link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/camagru.css">
     <title><?=$titlePage?></title>
 </head>
 <body>

@@ -1,5 +1,6 @@
 <?php
 $titlePage = "Camera";
+$requireLogin = TRUE;
 include('./views/header.php');
 ?>
 <div class="col-xs-12">
@@ -7,10 +8,22 @@ include('./views/header.php');
     <div class="panel panel-info">
         <div class="panel-heading">Caméra</div>
         <div class="panel-body" align="center">
+		<div class="col-xs-12">
+		<?php
+		$imagesSupp = $dbConnector->getPictures(1);
+		foreach($imagesSupp as $image)
+		{
+			$imageID = $image->getID();
+			?>
+			<img draggable="true" class="imgSupp" src="img/<?=$image->filename?>" width="80" height="80" id="img_<?=$imageID?>"/>
+			<?php
+		}
+		?>
+		</div>
             <div class="col-xs-12">
-            <device type="media" onchange="update(this.data)"></device>
-            <video autoplay></video>
-            <img src="">
+            <deevice type="media" onchange="update(this.data)"></device>
+            <video autoplay ondrop="Drop(event)" ondragover="AllowDrop(event)"></video>
+            <img id="capture" src="">
             <canvas style="display:none;"></canvas>
             </div>
             <div class="col-xs-12" id="divbtnCamera">
@@ -30,8 +43,28 @@ include('./views/header.php');
     </div>
     </div>
 </div>
-    <br/><br/><br/>
+<div id="imgAddedHere"></div>
     <script type="text/javascript">
+	function AllowDrop(event) {
+		event.preventDefault();
+	}
+
+	function Drop(event)
+	{
+		event.preventDefault();
+		console.log(event);
+        var imgDropped = event.dataTransfer.getData("text");
+		var elem = document.createElement("img");
+		elem.src = imgDropped;
+		elem.setAttribute("height", "80");
+		elem.setAttribute("width", "80");
+		elem.style.zIndex = "99";
+		elem.style.position = "absolute";
+		elem.style.left = event.x;
+		elem.style.top = event.y;
+		document.body.innerHTML+=elem.outerHTML;
+	}
+	
     function Camera() {
     // Parfois ce champ est undefined car le navigateur est vieux, donc on le défini en objet vide
     if (navigator.mediaDevices === undefined) {
@@ -82,7 +115,7 @@ include('./views/header.php');
 function Capture() {
     var video = document.querySelector('video');
     var canvas = document.querySelector('canvas');
-    var img = document.querySelector('img');
+    var img = document.getElementById('capture');
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
     canvas.getContext('2d').drawImage(video, 0, 0);
