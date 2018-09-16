@@ -16,6 +16,6 @@ $paramUserNOTIF_COMMENT_MYPIC = $dbConnector->getParamUser($currentUser->getID()
 $newValue = (isset($_POST[NOTIF_COMMENT_MYPIC]) && $_POST[NOTIF_COMMENT_MYPIC]=="on")?TRUE:FALSE;
 $paramUserNOTIF_COMMENT_MYPIC->param_value=$newValue?1:0;
 $dbConnector->saveParamUser($paramUserNOTIF_COMMENT_MYPIC);
-registerMessageHeader("OK.", "successw");
+registerMessageHeader("OK.", "success");
 header('location: ../account.php');
 exit;

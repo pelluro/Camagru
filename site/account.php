@@ -1,5 +1,5 @@
 <?php
-$titlePage = "Forgot Pass";
+$titlePage = "My account";
 $requireLogin = TRUE;
 include('./views/header.php');
 $user = getConnectedUser($dbConnector);

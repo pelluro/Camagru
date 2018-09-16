@@ -230,9 +230,9 @@ class DBConnector
         return $likes;
     }
 
-    function getPictures()
+    function getPictures($superposable = 0)
     {
-        $data = $this->execQuerySelect("SELECT * FROM pictures ORDER BY filedate");
+        $data = $this->execQuerySelect("SELECT * FROM pictures WHERE superposable= $superposable ORDER BY filedate");
         if ($data == null)
             return null;
         $pictures = array();

@@ -12,6 +12,7 @@ $req = 'CREATE DATABASE IF NOT EXISTS camagru;
                                             filename VARCHAR(19) NOT NULL default "",
                                             filedate DATETIME NOT NULL,
                                             user_id INT NOT NULL,
+                                            superposable INT(1) NOT NULL default "0",
                                             FOREIGN KEY (user_id) REFERENCES users(id));
     CREATE TABLE IF NOT EXISTS comments (   id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
                                             content VARCHAR(250) NOT NULL default "",

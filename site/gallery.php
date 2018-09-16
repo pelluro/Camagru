@@ -11,24 +11,34 @@ $pictures=$dbConnector->getPictures();
         }
         else {
             ?>
-            <button type="button" class="btn btn-default btn-sm" onclick="Previous();">&lt;</button>
+            <button type="button" class="btn btn-default btn-sm" id="btnPrevious" onclick="Previous();">&lt;</button>
             <?php
             $count = 0;
             foreach ($pictures as $picture) {
                 ?>
-                <a id="pic_<?=$count?>" href="photos.php?id=<?=$picture->getID();?>" <?php if($count++>=5) echo "style='display: none;'";?>>
-                <img src="./img/<?= $picture->filename ?>" width="120" height="120"/>
-                </a>
+                    <a id="pic_<?=$count?>" href="photos.php?id=<?=$picture->getID();?>" <?php if($count++>=5) echo "style='display: none;'";?>>
+                    <img src="./img/<?= $picture->filename ?>" width="120" height="120"/>
+                    </a>
                 <?php
-            }?>
-            <button type="button" class="btn btn-default btn-sm" onclick="Next();">&gt;</button>
-            <span id="currentPage">1</span>/<span id="maxPage"><?=floor($count/5)+1?></span>
-        <?php
+            }
+            if($count>5) {
+                ?>
+                <button type="button" class="btn btn-default btn-sm" onclick="Next();">&gt;</button>
+                <span id="currentPage">1</span>/<span id="maxPage"><?= floor($count / 5) + 1 ?></span>
+                <?php
+            }
         }
         ?>
     </div>
 </div>
 <script type="text/javascript">
+    <?php
+    if($count <= 5)
+    {
+        echo "setTimeout(function(){document.getElementById('btnPrevious').style.display = 'none';});";
+    }
+    ?>
+
     function Previous() {
         var currentPage = parseInt(document.getElementById("currentPage").innerHTML);
         if(currentPage > 1)

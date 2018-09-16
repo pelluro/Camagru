@@ -2,12 +2,16 @@
 $titlePage = "Camera";
 include('./views/header.php');
 ?>
+<div class="col-xs-12">
+    <div class="col-xs-8">
     <div class="panel panel-info">
         <div class="panel-heading">Caméra</div>
         <div class="panel-body" align="center">
             <div class="col-xs-12">
             <device type="media" onchange="update(this.data)"></device>
             <video autoplay></video>
+            <img src="">
+            <canvas style="display:none;"></canvas>
             </div>
             <div class="col-xs-12" id="divbtnCamera">
                 <button type="button" id="btnCamera" onclick="Camera()" class="btn btn-default btn-sm">Start</button>
@@ -17,6 +21,16 @@ include('./views/header.php');
             </div>
         </div>
     </div>
+    </div>
+    <div class="col-xs-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">Pictures</div>
+        <div class="panel-body" align="center">
+        </div>
+    </div>
+    </div>
+</div>
+    <br/><br/><br/>
     <script type="text/javascript">
     function Camera() {
     // Parfois ce champ est undefined car le navigateur est vieux, donc on le défini en objet vide
@@ -66,7 +80,14 @@ include('./views/header.php');
         });
 }
 function Capture() {
-    
+    var video = document.querySelector('video');
+    var canvas = document.querySelector('canvas');
+    var img = document.querySelector('img');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    canvas.getContext('2d').drawImage(video, 0, 0);
+    // Other browsers will fall back to image/png
+    img.src = canvas.toDataURL('image/webp');
 }
 </script>
 <?php
