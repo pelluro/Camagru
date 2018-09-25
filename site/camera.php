@@ -21,7 +21,7 @@ include('./views/header.php');
 		?>
 		</div>
             <div class="col-xs-12">
-            <deevice type="media" onchange="update(this.data)"></device>
+            <device type="media" onchange="update(this.data)"></device>
             <video autoplay ondrop="Drop(event)" ondragover="AllowDrop(event)"></video>
             <img id="capture" src="">
             <canvas style="display:none;"></canvas>

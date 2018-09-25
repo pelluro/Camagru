@@ -1,5 +1,6 @@
 <?php
 include "database_setup.php";
+
 $req = 'CREATE DATABASE IF NOT EXISTS camagru; 
 	USE camagru;
     CREATE TABLE IF NOT EXISTS users (      id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
