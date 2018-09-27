@@ -1,17 +1,20 @@
 <?php
 include "include.php";
 
-if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd'])  || strlen($_POST['passwd']) < 8)
+if(!isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['passwd'])  || strlen($_POST['passwd']) < 8 || !(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)))
 {
-	registerMessageHeader("No login or no email or no password or too short password.","danger");
+	registerMessageHeader("No login or no email or email not valide or no password or too short password.","danger");
 	header('location: ../register.php');
 	exit;
 }
 else
 {
+//    global $dbConnector;
 	$email = htmlentities($_POST['email'], ENT_QUOTES, "UTF-8");
 	$login = htmlentities($_POST['login'], ENT_QUOTES, "UTF-8");
 	$passwd = htmlentities($_POST['passwd'], ENT_QUOTES, "UTF-8");
+//	$login=mysqli_real_escape_string($dbConnector, $login);
+//	$passwd = mysqli_real_escape_string($dbConnector, $passwd);
 	$users = $dbConnector->getUserByEmailOrLogin($email,$login);
 	if ($users != null && count($users) > 0)
 	{

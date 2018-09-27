@@ -32,6 +32,9 @@ include('./views/header.php');
             <div class="col-xs-12" id="divbtnCapture" style="display: none;">
                 <button type="button" id="btnCapture" onclick="Capture()" class="btn btn-default btn-sm">Capture</button>
             </div>
+            <div class="col-xs-12" id="divbtnSave" style="display: none;">
+                <button type="button" id="btnSave" onclick="Save()" class="btn btn-default btn-sm">Save</button>
+            </div>
         </div>
     </div>
     </div>
@@ -43,7 +46,9 @@ include('./views/header.php');
     </div>
     </div>
 </div>
-<div id="imgAddedHere"></div>
+<div id="imgAddedHere">
+
+</div>
     <script type="text/javascript">
 	function AllowDrop(event) {
 		event.preventDefault();
@@ -101,12 +106,11 @@ include('./views/header.php');
                 // Cette méthode commence à être obsolète
                 video.src = window.URL.createObjectURL(mediaStream);
             }
-            video.onloadedmetadata = function(e) {
+            video.onloadedmetadata = function() {
                 video.play();
             };
             document.getElementById("divbtnCamera").style.display="none";
             document.getElementById("divbtnCapture").style.display="block";
-
         })
     .catch(function(err) {
             console.log(err.name + ": " + err.message);
@@ -121,8 +125,23 @@ function Capture() {
     canvas.getContext('2d').drawImage(video, 0, 0);
     // Other browsers will fall back to image/png
     img.src = canvas.toDataURL('image/webp');
+    document.getElementById("divbtnSave").style.display="block";
 }
-</script>
+function Save() {
+    var canvas = document.querySelector('canvas');
+    var data = canvas.toDataURL();
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+            // request complete
+        if (xhr.readyState == 4) {
+            window.open("signature/"+xhr.responseText,'_blank');
+        }
+    }
+    xhr.open('POST','error.php',true);
+    xhr.setRequestHeader('Content-type","application/x-www-form-urlencoded');
+    xhr.send('imageCanvas=' + data);
+}
+    </script>
 <?php
 include('./views/footer.php');
 ?>
