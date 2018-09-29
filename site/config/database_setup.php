@@ -1,8 +1,8 @@
 <?php
-require_once "login_ecole_setup.php";
+//require_once "login_ecole_setup.php";
 //require_once "login_nas_setup.php";
 //require_once "login_surface_setup.php";
-
+require_once "login_docker_setup.php";
 // Create connection
 
 try {
